@@ -1,0 +1,3 @@
+![](diagramaSec.png)
+
+![](diagramaApl.png)
