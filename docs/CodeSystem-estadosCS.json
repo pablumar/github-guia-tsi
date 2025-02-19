@@ -1,0 +1,37 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "estadosCS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem estadosCS</b></p><a name=\"estadosCS\"> </a><a name=\"hcestadosCS\"> </a><a name=\"estadosCS-en-US\"> </a><p>This  code system <code>http://sns.gob.es/fhir/tsi/CodeSystem/estadosCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"estadosCS-1\"> </a></td><td>BAJA EN SERVICIO DE SALUD</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"estadosCS-2\"> </a></td><td>BAJA POR DEFUNCION</td></tr></table></div>"
+  },
+  "url" : "http://sns.gob.es/fhir/tsi/CodeSystem/estadosCS",
+  "version" : "1.0.0",
+  "name" : "EstadosCS",
+  "title" : "CodeSystem Estado Paciente",
+  "status" : "draft",
+  "date" : "2025-02-19T12:43:17+01:00",
+  "publisher" : "SNS",
+  "contact" : [{
+    "name" : "SNS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://sns.gob.es"
+    },
+    {
+      "system" : "email",
+      "value" : "my-group@example.com"
+    }]
+  }],
+  "description" : "CodeSystem Estado Paciente",
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "1",
+    "display" : "BAJA EN SERVICIO DE SALUD"
+  },
+  {
+    "code" : "2",
+    "display" : "BAJA POR DEFUNCION"
+  }]
+}

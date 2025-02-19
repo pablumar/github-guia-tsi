@@ -1,0 +1,232 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/example/Patient/BBBBBBBBBB000432> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "BBBBBBBBBB000432"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://sns.gob.es/fhir/tsi/StructureDefinition/PatientSNS"^^xsd:anyURI ;
+       fhir:link <http://sns.gob.es/fhir/tsi/StructureDefinition/PatientSNS>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient BBBBBBBBBB000432</b></p><a name=\"BBBBBBBBBB000432\"> </a><a name=\"hcBBBBBBBBBB000432\"> </a><a name=\"BBBBBBBBBB000432-en-US\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">CARLOTA FERNANDEZ FERNANDEZ  Female, DoB: 1985-11-03 ( CIP: ?ngen-9? (use: official, ))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td>true</td><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td colspan=\"3\">2020-10-04</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Other Ids (see the one above)\">Other Ids:</td><td colspan=\"3\"><ul><li>CIP SNS/BBBBBBBBBB000432 (use: official, )</li><li>DNI / NIE/23054004T (use: official, )</li><li>NASS_TITULAR/010000014123 (use: official, )</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\"><ul><li>ph: 983/117722(Work)</li><li>ph: 983117722(Work)</li><li>ph: 983/223344(Work)</li><li>ph: 983223344(Work)</li><li><a href=\"mailto:email@email.com\">email@email.com</a></li><li> CAÑADA DE GALLEGO 0 CONSULTORIO SMS CONSULTORIO SMS 30026000601 30 MURCIA 23080 España </li></ul></td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://sns.gob.es/fhir/TSI/StructureDefinition/patient-sexoNacimiento"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Coding ;
+       fhir:system [ fhir:v "http://sns.gob.es/fhir/TSI/CodeSystem/sexoNacimientoCS"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "2" ] ;
+       fhir:display [ fhir:v "MUJER" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://sns.gob.es/fhir/TSI/StructureDefinition/patient-birth-country"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Coding ;
+       fhir:system [ fhir:v "http://sns.gob.es/fhir/TSI/CodeSystem/paisesCS"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "724" ] ;
+       fhir:display [ fhir:v "España" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://sns.gob.es/fhir/TSI/StructureDefinition/patient-coverage-insurance"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Coding ;
+       fhir:system [ fhir:v "http://sns.gob.es/fhir/TSI/CodeSystem/aseguradorasCS"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1" ] ;
+       fhir:display [ fhir:v "INSS" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://sns.gob.es/fhir/TSI/StructureDefinition/patient-coverage-mgt"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Coding ;
+       fhir:system [ fhir:v "http://sns.gob.es/fhir/TSI/CodeSystem/gestorasCS"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "22" ] ;
+       fhir:display [ fhir:v "SERVICIO MURCIANO DE SALUD" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://sns.gob.es/fhir/TSI/StructureDefinition/patient-coverage-providers"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Coding ;
+       fhir:system [ fhir:v "http://sns.gob.es/fhir/TSI/CodeSystem/proveedoresCS"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "34" ] ;
+       fhir:display [ fhir:v "SERVICIO MURCIANO DE SALUD" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://sns.gob.es/fhir/TSI/StructureDefinition/patient-coverage-title"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Coding ;
+       fhir:system [ fhir:v "http://sns.gob.es/fhir/TSI/CodeSystem/titulosCS"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "19" ] ;
+       fhir:display [ fhir:v "GENERICO SEGURIDAD SOCIAL" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://sns.gob.es/fhir/TSI/StructureDefinition/patient-coverage-situation"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Coding ;
+       fhir:system [ fhir:v "http://sns.gob.es/fhir/TSI/CodeSystem/situacionesCS"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1" ] ;
+       fhir:display [ fhir:v "ACTIVO" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://sns.gob.es/fhir/TSI/StructureDefinition/patient-creation-date"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2012-07-10"^^xsd:date ]
+  ] [
+     fhir:url [ fhir:v "http://sns.gob.es/fhir/TSI/StructureDefinition/estado-comprobacion-indef"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Coding ;
+       fhir:system [ fhir:v "http://sns.gob.es/fhir/TSI/CodeSystem/estadoIndefVS"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "3" ] ;
+       fhir:display [ fhir:v "Validado automático" ]
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://sns.gob.es/fhir/TSI/ValueSet/tipoDocumentoVS"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "CIP-SNS" ] ;
+         fhir:display [ fhir:v "CIP SNS" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "2.16.724.4.40"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "BBBBBBBBBB000432" ]
+  ] [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://sns.gob.es/fhir/TSI/ValueSet/tipoDocumentoVS"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "NNESP" ] ;
+         fhir:display [ fhir:v "DNI / NIE" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "1.3.6.1.4.1.19126.3"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "23054004T" ]
+  ] [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://sns.gob.es/fhir/TSI/ValueSet/tipoDocumentoVS"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "NASS_TITULAR" ] ;
+         fhir:display [ fhir:v "NASS_TITULAR" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "1.3.6.1.4.1.19126.4"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "010000014123" ]
+  ] [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://sns.gob.es/fhir/TSI/ValueSet/tipoDocumentoVS"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "CIP" ] ;
+         fhir:display [ fhir:v "CIP" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "2.16.724.4.41"^^xsd:anyURI ] ;
+     fhir:assigner [
+       fhir:identifier [
+         fhir:system [ fhir:v "2.16.724.4.42"^^xsd:anyURI ]
+       ]
+     ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:name ( [
+     fhir:family [
+       fhir:v "FERNANDEZ FERNANDEZ" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://sns.gob.es/fhir/TSI/StructureDefinition/patient-surname1"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "FERNANDEZ" ]
+       ] [
+         fhir:url [ fhir:v "http://sns.gob.es/fhir/TSI/StructureDefinition/patient-surname2"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "FERNANDEZ" ]
+       ] )
+     ] ;
+     fhir:given ( [ fhir:v "CARLOTA" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "983/117722" ] ;
+     fhir:use [ fhir:v "work" ] ;
+     fhir:rank [ fhir:v "1"^^xsd:positiveInteger ]
+  ] [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "983117722" ] ;
+     fhir:use [ fhir:v "work" ] ;
+     fhir:rank [ fhir:v "2"^^xsd:positiveInteger ]
+  ] [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "983/223344" ] ;
+     fhir:use [ fhir:v "work" ] ;
+     fhir:rank [ fhir:v "3"^^xsd:positiveInteger ]
+  ] [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "983223344" ] ;
+     fhir:use [ fhir:v "work" ] ;
+     fhir:rank [ fhir:v "4"^^xsd:positiveInteger ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "email@email.com" ] ;
+     fhir:use [ fhir:v "home" ] ;
+     fhir:rank [ fhir:v "5"^^xsd:positiveInteger ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "1985-11-03"^^xsd:date] ; # 
+  fhir:deceased [ fhir:v "2020-10-04"^^xsd:date] ; # 
+  fhir:address ( [
+     fhir:line ( [
+       fhir:v " CAÑADA DE GALLEGO 0 CONSULTORIO SMS CONSULTORIO SMS 30026000601 30" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CAÑADA DE GALLEGO" ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "0" ]
+       ] [
+         fhir:url [ fhir:v "http://sns.gob.es/fhir/TSI/StructureDefinition/patient-address-bloque"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CONSULTORIO SMS" ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "30876" ]
+       ] [
+         fhir:url [ fhir:v "http://sns.gob.es/fhir/TSI/StructureDefinition/patient-address-city"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Coding ;
+           fhir:system [ fhir:v "http://sns.gob.es/fhir/TSI/CodeSystem/municipiosCS"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "30026000601" ] ;
+           fhir:display [ fhir:v "CAÑADA DE GALLEGO" ]
+         ]
+       ] [
+         fhir:url [ fhir:v "http://sns.gob.es/fhir/TSI/StructureDefinition/patient-address-district"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Coding ;
+           fhir:system [ fhir:v "http://sns.gob.es/fhir/TSI/CodeSystem/provinciasCS"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "30" ] ;
+           fhir:display [ fhir:v "MURCIA" ]
+         ]
+       ] )
+     ] ) ;
+     fhir:city [ fhir:v "MURCIA" ] ;
+     fhir:district [ fhir:v "Madrid" ] ;
+     fhir:postalCode [ fhir:v "23080" ] ;
+     fhir:country [
+       fhir:v "España" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Coding ;
+           fhir:system [ fhir:v "http://terminology.ehdsi.eu/ValueSet/eHDSICountry"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "ES" ] ;
+           fhir:display [ fhir:v "SPAIN" ]
+         ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

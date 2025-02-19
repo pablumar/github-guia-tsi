@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Alta Ciudadano - Guía de Implementación Tarjeta Sanitaria Individual (TSI) v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<div>
+  <table width="100%">
+    <tr >
+      <td align="center">
+        <img src="assets/images/logoGlobal.png">
+      </td>
+    </tr>
+  </table>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación Tarjeta Sanitaria Individual (TSI)</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - R4
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Introducción</a>
+  </li>
+  <li>
+    <a href="toc.html">Listado de Contenidos</a>
+  </li>
+  <li>
+    <a href="diagramaSec.html">Diagrama de Secuencia</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Escenarios
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="llamadaConsulta.html">Consulta de Ciudadanos</a>
+      </li>
+      <li>
+        <a href="llamadaAlta.html">Alta Ciudadanos</a>
+      </li>
+      <li>
+        <a href="llamadaModificacion.html">Modificacion Ciudadanos</a>
+      </li>
+      <li>
+        <a href="llamadaBaja.html">Baja Ciudadanos</a>
+      </li>
+      <li>
+        <a href="llamadaNotificar.html">Notificar Cambio</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementación
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="consultarCiudadano.html">Consulta de Ciudadanos</a>
+      </li>
+      <li>
+        <a href="consultarCiudadanoEuropeo.html">Consulta de Ciudadano Europeo</a>
+      </li>
+      <li>
+        <a href="altaCiudadano.html">Alta Ciudadanos</a>
+      </li>
+      <li>
+        <a href="modificarCiudadano.html">Modificacion Ciudadanos</a>
+      </li>
+      <li>
+        <a href="bajaCiudadano.html">Baja Ciudadanos</a>
+      </li>
+      <li>
+        <a href="notificarCambio.html">Notificar Cambio</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artefactos
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">Listado</a>
+      </li>
+      <li>
+        <a href="mapeo.html">Mapeos</a>
+      </li>
+      <li>
+        <a href="terminologias.html">Terminologias</a>
+      </li>
+      <li>
+        <a href="seguridad.html">Seguridad</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Alta Ciudadano</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación Tarjeta Sanitaria Individual (TSI) - Local Development build (v1.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://example.com/fhir/example/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Alta Ciudadano</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<figure>
+  <?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" preserveAspectRatio="none" version="1.1" viewBox="0 0 1432 799" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="471" x="473.5" y="24.5332">Profiles, actors and transactions covered in this national extension</text><!--cluster EPR App--><g id="cluster_EPR App"><rect fill="none" height="747" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="365" x="7" y="46.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="59" x="160" y="63.1426">EPR App</text></g><!--cluster EPR API--><g id="cluster_EPR API"><rect fill="none" height="674" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="356" x="718" y="45.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="54" x="869" y="62.1426">EPR API</text></g><!--entity IUAClient--><g id="elem_IUAClient"><rect fill="#F1F1F1" height="37.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="167" x="106" y="82.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="147" x="116" y="107.1426">IUA Authorization Client</text></g><!--entity PDQmConsumer--><g id="elem_PDQmConsumer"><rect fill="#F1F1F1" height="37.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="228" x="75.5" y="155.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="208" x="85.5" y="180.1426">Patient Demographics Consumer</text></g><!--entity PIXmConsumer--><g id="elem_PIXmConsumer"><rect fill="#F1F1F1" height="37.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="333" x="23" y="228.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="313" x="33" y="253.1426">PIXm Patient Identifier Cross-reference Consumer</text></g><!--entity PIXmSource--><g id="elem_PIXmSource"><rect fill="#F1F1F1" height="37.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="197" x="91" y="301.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="177" x="101" y="326.1426">PIXm Patient Identity Source</text></g><!--entity MHDSource--><g id="elem_MHDSource"><rect fill="#F1F1F1" height="37.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="167" x="106" y="374.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="147" x="116" y="399.1426">MHD Document Source</text></g><!--entity MHDConsumer--><g id="elem_MHDConsumer"><rect fill="#F1F1F1" height="37.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="187" x="96" y="447.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="167" x="106" y="472.1426">MHD Document Consumer</text></g><!--entity ATNANode--><g id="elem_ATNANode"><rect fill="#F1F1F1" height="37.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="198" x="90.5" y="520.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="178" x="100.5" y="545.1426">RESTful ATNA Secure Node</text></g><!--entity mCSDSelectiveConsumer--><g id="elem_mCSDSelectiveConsumer"><rect fill="#F1F1F1" height="37.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="239" x="70" y="593.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="219" x="80" y="618.1426">Care Services Selective Consumer</text></g><!--entity PPQmPolicySource--><g id="elem_PPQmPolicySource"><rect fill="#F1F1F1" height="37.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="106" x="136.5" y="666.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="86" x="146.5" y="691.1426">Policy Source</text></g><!--entity PPQmPolicyConsumer--><g id="elem_PPQmPolicyConsumer"><rect fill="#F1F1F1" height="37.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="126" x="126.5" y="739.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="106" x="136.5" y="764.1426">Policy Consumer</text></g><!--entity IUAAuthServer--><g id="elem_IUAAuthServer"><rect fill="#F1F1F1" height="37.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="173" x="809.5" y="81.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="153" x="819.5" y="106.1426">IUA Authorization Server</text></g><!--entity IUAResourceServer--><g id="elem_IUAResourceServer"><rect fill="#F1F1F1" height="37.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="152" x="820" y="154.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="132" x="830" y="179.1426">IUA Resource Server</text></g><!--entity PDQmSupplier--><g id="elem_PDQmSupplier"><rect fill="#F1F1F1" height="37.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="215" x="788.5" y="227.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="195" x="798.5" y="252.1426">Patient Demographics Supplier</text></g><!--entity PIXmManager--><g id="elem_PIXmManager"><rect fill="#F1F1F1" height="37.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="324" x="734" y="300.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="304" x="744" y="325.1426">PIXm Patient Identifier Cross-reference Manager</text></g><!--entity MHDRecipient--><g id="elem_MHDRecipient"><rect fill="#F1F1F1" height="37.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="181" x="805.5" y="373.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="161" x="815.5" y="398.1426">MHD Document Recipient</text></g><!--entity MHDResponder--><g id="elem_MHDResponder"><rect fill="#F1F1F1" height="37.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="192" x="800" y="446.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="172" x="810" y="471.1426">MHD Document Responder</text></g><!--entity ATNARepository--><g id="elem_ATNARepository"><rect fill="#F1F1F1" height="37.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="270" x="761" y="519.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="250" x="771" y="544.1426">RESTful ATNA Audit Record Repository</text></g><!--entity mCSDSelectiveSupplier--><g id="elem_mCSDSelectiveSupplier"><rect fill="#F1F1F1" height="37.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="226" x="783" y="592.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="206" x="793" y="617.1426">Care Services Selective Supplier</text></g><!--entity PPQmPolicyRepository--><g id="elem_PPQmPolicyRepository"><rect fill="#F1F1F1" height="37.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="129" x="831.5" y="665.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="109" x="841.5" y="690.1426">Policy Repository</text></g><!--entity UAProvider--><g id="elem_UAProvider"><rect fill="#F1F1F1" height="37.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="200" x="1226" y="81.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="180" x="1236" y="106.1426">User Authentication Provider</text></g><!--link IUAClient to IUAAuthServer--><g id="link_IUAClient_IUAAuthServer"><path d="M273.04,101.4894 C405.86,101.2994 666.06,100.9294 804.05,100.7394 " fill="none" id="IUAClient-to-IUAAuthServer" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="809.31,100.7294,800.2986,96.7551,804.31,100.7437,800.3215,104.7551,809.31,100.7294" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="155" x="465.5" y="82.1045">Get Access Token [ITI-71],</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="249" x="420.5" y="98.4561">Get Authorization Server Metadata [ITI-103]</text></g><!--link IUAClient to IUAResourceServer--><g id="link_IUAClient_IUAResourceServer"><path d="M273.05,113.2294 C308.41,118.0194 350.19,123.4094 388,127.6094 C538.52,144.3394 714.7,159.2794 814.74,167.3394 " fill="none" id="IUAClient-to-IUAResourceServer" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="819.74,167.7394,811.0887,163.0324,814.756,167.3395,810.4489,171.0068,819.74,167.7394" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="194" x="448" y="124.1045">Incorporate Access Token [ITI-72]</text></g><!--link PDQmConsumer to PDQmSupplier--><g id="link_PDQmConsumer_PDQmSupplier"><path d="M303.69,186.1794 C435.6,199.6594 652.2,221.7994 783.42,235.2094 " fill="none" id="PDQmConsumer-to-PDQmSupplier" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="788.44,235.7194,779.8994,230.8145,783.4665,235.2049,779.0762,238.772,788.44,235.7194" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="252" x="419" y="192.1045">Mobile Patient Demographics Query [ITI-78]</text></g><!--link PIXmConsumer to PIXmManager--><g id="link_PIXmConsumer_PIXmManager"><path d="M356.12,264.5394 C468.44,276.0194 616.36,291.1294 728.8,302.6194 " fill="none" id="PIXmConsumer-to-PIXmManager" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="733.79,303.1294,725.2494,298.2245,728.8165,302.6149,724.4262,306.182,733.79,303.1294" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="312" x="389" y="265.1045">Mobile Patient Identifier Cross-reference Query [ITI-83]</text></g><!--link PIXmSource to PIXmManager--><g id="link_PIXmSource_PIXmManager"><path d="M288.19,321.7994 C320.02,322.1294 355.51,322.4494 388,322.6094 C527.55,323.3194 562.45,323.6894 702,322.6094 C710.76,322.5394 719.75,322.4594 728.83,322.3594 " fill="none" id="PIXmSource-to-PIXmManager" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="733.88,322.2994,724.8349,318.4025,728.8803,322.3565,724.9263,326.402,733.88,322.2994" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="203" x="443.5" y="319.1045">Patient Identity Feed FHIR [ITI-104]</text></g><!--link MHDSource to MHDRecipient--><g id="link_MHDSource_MHDRecipient"><path d="M273.04,393.4894 C404.61,393.3094 661.16,392.9394 800.11,392.7394 " fill="none" id="MHDSource-to-MHDRecipient" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="805.41,392.7394,796.3986,388.7651,800.41,392.7537,796.4215,396.7651,805.41,392.7394" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="196" x="445" y="374.1045">Provide Document Bundle [ITI-65],</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="236" x="427" y="390.4561">Update Document Metadata [CH:MHD-1]</text></g><!--link MHDConsumer to MHDResponder--><g id="link_MHDConsumer_MHDResponder"><path d="M283.33,466.4794 C415.85,466.2894 658.31,465.9494 794.79,465.7494 " fill="none" id="MHDConsumer-to-MHDResponder" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="800,465.7394,791,461.7394,795,465.7394,791,469.7394,800,465.7394" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="167" x="459.5" y="430.1045">Find Document Lists [ITI-66],</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="204" x="441" y="446.4561">Find Document References [ITI-67],</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="152" x="469" y="462.8076">Retrieve Document [ITI-68]</text></g><!--link ATNANode to ATNARepository--><g id="link_ATNANode_ATNARepository"><path d="M288.83,539.4694 C410.24,539.2994 617.56,538.9994 755.41,538.8094 " fill="none" id="ATNANode-to-ATNARepository" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="760.7,538.7994,751.6886,534.8251,755.7,538.8137,751.7115,542.8251,760.7,538.7994" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="154" x="468" y="536.1045">Record Audit Event [ITI-20]</text></g><!--link mCSDSelectiveConsumer to mCSDSelectiveSupplier--><g id="link_mCSDSelectiveConsumer_mCSDSelectiveSupplier"><path d="M309.21,612.4394 C439.56,612.2594 647.55,611.9594 777.44,611.7794 " fill="none" id="mCSDSelectiveConsumer-to-mCSDSelectiveSupplier" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="782.79,611.7694,773.7786,607.7951,777.79,611.7837,773.8015,615.7951,782.79,611.7694" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="209" x="440.5" y="609.1045">Find Matching Care Services [ITI-90]</text></g><!--link PPQmPolicySource to PPQmPolicyRepository--><g id="link_PPQmPolicySource_PPQmPolicyRepository"><path d="M242.59,685.5394 C367.75,685.3594 685.44,684.9094 826.14,684.7094 " fill="none" id="PPQmPolicySource-to-PPQmPolicyRepository" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="831.47,684.6994,822.4586,680.7251,826.47,684.7137,822.4815,688.7251,831.47,684.6994" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="212" x="439" y="666.1045">Mobile Privacy Policy Feed [PPQ-3],</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="252" x="419" y="682.4561">Mobile Privacy Policy Bundle Feed [PPQ-4]</text></g><!--link PPQmPolicyConsumer to PPQmPolicyRepository--><g id="link_PPQmPolicyConsumer_PPQmPolicyRepository"><path d="M252.8,753.8394 C349.22,746.2494 540.33,730.3394 702,711.6094 C743.16,706.8394 789.11,700.4594 825.85,695.0894 " fill="none" id="PPQmPolicyConsumer-to-PPQmPolicyRepository" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="831.2,694.3094,821.7129,691.6645,826.2534,695.0385,822.8795,699.579,831.2,694.3094" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="225" x="432.5" y="708.1045">Mobile Privacy Policy Retrieve [PPQ-5]</text></g><!--link IUAAuthServer to UAProvider--><g id="link_IUAAuthServer_UAProvider"><path d="M982.58,100.6094 C1051.07,100.6094 1147.42,100.6094 1220.47,100.6094 " fill="none" id="IUAAuthServer-to-UAProvider" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="1225.69,100.6094,1216.69,96.6094,1220.69,100.6094,1216.69,104.6094,1225.69,100.6094" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="104" x="1091" y="97.1045">Authenticate User</text></g></g></svg>
+</figure>
+<p><br clear="all" /></p>
+
+<p><strong>Descripción del Escenario:</strong></p>
+<p>El escenario propuesto es el siguiente: una CA a través de un
+endpoint habilitado, quiere dar de alta un ciudadano utilizando la
+transacción IHE ITI-93 "Patient Identity Feed FHIR” que permite la
+creación, actualización y eliminación de recursos de paciente de manera
+coherente y estandarizada, facilitando la interoperabilidad entre
+sistemas de salud al proporcionar un formato común para el intercambio
+de datos de identificación y demográficos del paciente.</p>
+<p><strong>Operación involucrada:</strong> <em>/Patient</em></p>
+<p><strong>Ejemplo:</strong></p>
+<ul>
+<li><p><strong>Solicitud</strong>: La aplicación origen realiza alta de
+un nuevo ciudadano.</p></li>
+</ul>
+<p><em>POST /Patient</em></p>
+<table border="1">
+<colgroup>
+<col style="width: 31%" />
+<col style="width: 26%" />
+<col style="width: 41%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Acciones</strong></th>
+<th style="text-align: center;"><strong>Interfaz</strong></th>
+<th style="text-align: center;"><strong>RequestBody</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><p><strong>CREATE</strong></p>
+<p>Esta acción implica la creación de un nuevo recurso de paciente en el
+sistema de salud. Se espera que se proporcionen todos los datos
+necesarios para identificar al paciente y establecer su registro en el
+sistema.<br />
+<br />
+Por ejemplo: Crear un nuevo recurso de paciente para un paciente recién
+registrado en el sistema de salud, proporcionando su información
+demográfica, identificadores únicos, como el número de seguridad social
+(SNS), y cualquier otra información relevante.</p></td>
+<td>POST [base]/fhir/Patient</td>
+<td><p>{</p>
+<p>"resourceType": "Patient",</p>
+<p>"id": "usuario123",</p>
+<p>"identifier": [</p>
+<p>{</p>
+<p>"system": "http://example.org/sns",</p>
+<p>"value": "123456789"</p>
+<p>}</p>
+<p>],</p>
+<p>"name": [</p>
+<p>{</p>
+<p>"family": "Luque",</p>
+<p>"given": ["Juan"]</p>
+<p>}</p>
+<p>],</p>
+<p>"gender": "hombre"</p>
+<p>}</p></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p><strong>Respuesta correcta esperada (Alta)</strong>:</p>
+<ul>
+<li><p><strong>Código de Estado</strong>: 200 OK</p></li>
+</ul></li>
+<li><p><strong>Respuesta incorrecta:</strong></p>
+<ul>
+<li><p><strong>Cabecera HTTP</strong></p></li>
+<li><p><strong>OperationOutcome</strong>:</p></li>
+</ul></li>
+</ul>
+<table border="1">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;"><p>{</p>
+<p>"resourceType": "OperationOutcome",</p>
+<p>"issue": [</p>
+<p>{</p>
+<p>"severity": "error",</p>
+<p>"code": "not-found",</p>
+<p>"diagnostics": "Ciudadano no registrado correctamente"</p>
+<p>}</p>
+<p>]</p>
+<p>}</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://sns.gob.es">SNS</a>.  Package tsi.sns.implementationGuide#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 19, 2025 12:43+0100">2025-02-19</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

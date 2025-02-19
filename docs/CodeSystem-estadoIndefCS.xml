@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="estadoIndefCS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem estadoIndefCS</b></p><a name="estadoIndefCS"> </a><a name="hcestadoIndefCS"> </a><a name="estadoIndefCS-en-US"> </a><p>This  code system <code>http://sns.gob.es/fhir/tsi/CodeSystem/estadoIndefCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">0<a name="estadoIndefCS-0"> </a></td><td>Sin validar</td></tr><tr><td style="white-space:nowrap">1<a name="estadoIndefCS-1"> </a></td><td>Pendiente validación manual</td></tr><tr><td style="white-space:nowrap">2<a name="estadoIndefCS-2"> </a></td><td>Validado manual</td></tr><tr><td style="white-space:nowrap">3<a name="estadoIndefCS-3"> </a></td><td>Validado automático</td></tr><tr><td style="white-space:nowrap">4<a name="estadoIndefCS-4"> </a></td><td>No validable</td></tr></table></div>
+  </text>
+  <url value="http://sns.gob.es/fhir/tsi/CodeSystem/estadoIndefCS"/>
+  <version value="1.0.0"/>
+  <name value="EstadoIndefCS"/>
+  <title value="Estado comprobación Fecha Defunción"/>
+  <status value="draft"/>
+  <date value="2025-02-19T12:43:17+01:00"/>
+  <publisher value="SNS"/>
+  <contact>
+    <name value="SNS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://sns.gob.es"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="my-group@example.com"/>
+    </telecom>
+  </contact>
+  <description value="Estado comprobación Fecha Defunción"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="0"/>
+    <display value="Sin validar"/>
+  </concept>
+  <concept>
+    <code value="1"/>
+    <display value="Pendiente validación manual"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="Validado manual"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="Validado automático"/>
+  </concept>
+  <concept>
+    <code value="4"/>
+    <display value="No validable"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,32 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "estadoIndefVS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet estadoIndefVS</b></p><a name=\"estadoIndefVS\"> </a><a name=\"hcestadoIndefVS\"> </a><a name=\"estadoIndefVS-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-estadoIndefCS.html\"><code>http://sns.gob.es/fhir/tsi/CodeSystem/estadoIndefCS</code></a></li></ul></div>"
+  },
+  "url" : "http://sns.gob.es/fhir/tsi/ValueSet/estadoIndefVS",
+  "version" : "1.0.0",
+  "name" : "EstadoIndefVS",
+  "title" : "ValueSet comprobación Fecha Defunción",
+  "status" : "draft",
+  "date" : "2025-02-19T12:43:17+01:00",
+  "publisher" : "SNS",
+  "contact" : [{
+    "name" : "SNS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://sns.gob.es"
+    },
+    {
+      "system" : "email",
+      "value" : "my-group@example.com"
+    }]
+  }],
+  "description" : "ValueSet comprobación Fecha Defunción",
+  "compose" : {
+    "include" : [{
+      "system" : "http://sns.gob.es/fhir/tsi/CodeSystem/estadoIndefCS"
+    }]
+  }
+}

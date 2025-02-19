@@ -1,0 +1,494 @@
+{
+  "package": "tsi.sns.implementationGuide",
+  "version": "1.0.0",
+  "fhirVersion": "4.0.1",
+  "extensions": [
+    {
+      "url": "http://sns.gob.es/fhir/tsi/StructureDefinition/estado-comprobacion-indef",
+      "title": "Estado comprobación fecha defunción",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://sns.gob.es/fhir/tsi/StructureDefinition/iso21090-ADXP-houseNumber",
+      "title": "Numero",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://sns.gob.es/fhir/tsi/StructureDefinition/iso21090-ADXP-postBox",
+      "title": "Codigo Postal",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://sns.gob.es/fhir/tsi/StructureDefinition/iso21090-ADXP-streetName",
+      "title": "Nombre Via",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://sns.gob.es/fhir/tsi/StructureDefinition/iso21090-ADXP-streetNameType",
+      "title": "Tipo Via",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-address-bis",
+      "title": "Bis",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-address-bloque",
+      "title": "Bloque",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-address-escalera",
+      "title": "Escalera",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-address-municipio",
+      "title": "Municipio",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-address-piso",
+      "title": "Piso",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-address-provincia",
+      "title": "Provincia",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-address-puerta",
+      "title": "Puerta",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-adscription-community",
+      "title": "CA Adscripción paciente",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-birth-community",
+      "title": "CA Nacimiento paciente",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-birth-country",
+      "title": "Pais Nacimiento paciente",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-coverage-entities",
+      "title": "Entidades Colaboradoras coberturas paciente",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-coverage-insurance",
+      "title": "Entidades Aseguradoras coberturas paciente",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-coverage-mgt",
+      "title": "Entidades Gestoras coberturas paciente",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-coverage-providers",
+      "title": "Proveedores coberturas paciente",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-coverage-situation",
+      "title": "Situación coberturas paciente",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-coverage-title",
+      "title": "Titulo coberturas paciente",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-creation-datetime",
+      "title": "Fecha de alta del registro. Formato yyyy-mm-dd",
+      "types": [
+        "date"
+      ]
+    },
+    {
+      "url": "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-dniDup",
+      "title": "Flag Duplicado DNI",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-foreigner",
+      "title": "Extranjero",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-inscription-community",
+      "title": "CA Inscripción coberturas paciente",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-passive-cause",
+      "title": "Motivo Causa Pasivo",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-passive-date",
+      "title": "Fecha Paso a Pasivo",
+      "types": [
+        "date"
+      ]
+    },
+    {
+      "url": "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-pharmacy-indicator",
+      "title": "Indicador Farmacia paciente",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-pharmacy-subindicator",
+      "title": "SubIndicador Farmacia paciente",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-sexoNacimiento",
+      "title": "Sexo Nacimiento",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-surname1",
+      "title": "Primer Apellido",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-surname2",
+      "title": "Segundo Apellido",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-temporalidad-ca",
+      "title": "CA Temporalidad",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-temporalidad-end-date",
+      "title": "Fecha fin temporalidad",
+      "types": [
+        "date"
+      ]
+    },
+    {
+      "url": "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-temporalidad-start-date",
+      "title": "Fecha inicio temporalidad",
+      "types": [
+        "date"
+      ]
+    }
+  ],
+  "profiles": {
+    "Patient": [
+      {
+        "url": "http://sns.gob.es/fhir/tsi/StructureDefinition/PatientSNS",
+        "title": "Paciente"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber": [
+      "Patient.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox": [
+      "Patient.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName": [
+      "Patient.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameType": [
+      "Patient.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding": [
+      "Patient.address.country"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-nationality": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-sexParameterForClinicalUse": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://sns.gob.es/fhir/TSI/StructureDefinition/estado-comprobacion-indef": [
+      "Patient"
+    ],
+    "http://sns.gob.es/fhir/TSI/StructureDefinition/fathersFamily": [
+      "Patient.name.family"
+    ],
+    "http://sns.gob.es/fhir/TSI/StructureDefinition/mothersFamily": [
+      "Patient.name.family"
+    ],
+    "http://sns.gob.es/fhir/TSI/StructureDefinition/patient-address-bloque": [
+      "Patient.address.line"
+    ],
+    "http://sns.gob.es/fhir/TSI/StructureDefinition/patient-address-city": [
+      "Patient.address.line"
+    ],
+    "http://sns.gob.es/fhir/TSI/StructureDefinition/patient-address-district": [
+      "Patient.address.line"
+    ],
+    "http://sns.gob.es/fhir/TSI/StructureDefinition/patient-adscription-community": [
+      "Patient"
+    ],
+    "http://sns.gob.es/fhir/TSI/StructureDefinition/patient-birth-community": [
+      "Patient"
+    ],
+    "http://sns.gob.es/fhir/TSI/StructureDefinition/patient-birth-country": [
+      "Patient"
+    ],
+    "http://sns.gob.es/fhir/TSI/StructureDefinition/patient-coverage-entities": [
+      "Patient"
+    ],
+    "http://sns.gob.es/fhir/TSI/StructureDefinition/patient-coverage-insurance": [
+      "Patient"
+    ],
+    "http://sns.gob.es/fhir/TSI/StructureDefinition/patient-coverage-mgt": [
+      "Patient"
+    ],
+    "http://sns.gob.es/fhir/TSI/StructureDefinition/patient-coverage-providers": [
+      "Patient"
+    ],
+    "http://sns.gob.es/fhir/TSI/StructureDefinition/patient-coverage-situation": [
+      "Patient"
+    ],
+    "http://sns.gob.es/fhir/TSI/StructureDefinition/patient-coverage-title": [
+      "Patient"
+    ],
+    "http://sns.gob.es/fhir/TSI/StructureDefinition/patient-creation-date": [
+      "Patient"
+    ],
+    "http://sns.gob.es/fhir/TSI/StructureDefinition/patient-foreigner": [
+      "Patient"
+    ],
+    "http://sns.gob.es/fhir/TSI/StructureDefinition/patient-inscription-community": [
+      "Patient"
+    ],
+    "http://sns.gob.es/fhir/TSI/StructureDefinition/patient-passive-cause": [
+      "Patient"
+    ],
+    "http://sns.gob.es/fhir/TSI/StructureDefinition/patient-passive-date": [
+      "Patient"
+    ],
+    "http://sns.gob.es/fhir/TSI/StructureDefinition/patient-pharmacy-indicator": [
+      "Patient"
+    ],
+    "http://sns.gob.es/fhir/TSI/StructureDefinition/patient-pharmacy-subindicator": [
+      "Patient"
+    ],
+    "http://sns.gob.es/fhir/TSI/StructureDefinition/patient-sexoNacimiento": [
+      "Patient"
+    ],
+    "http://sns.gob.es/fhir/TSI/StructureDefinition/patient-surname1": [
+      "Patient.name.family"
+    ],
+    "http://sns.gob.es/fhir/TSI/StructureDefinition/patient-surname2": [
+      "Patient.name.family"
+    ],
+    "http://sns.gob.es/fhir/tsi/StructureDefinition/estado-comprobacion-indef": [
+      "Patient"
+    ],
+    "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-address-bis": [
+      "Patient.address.line"
+    ],
+    "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-address-bloque": [
+      "Patient.address.line"
+    ],
+    "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-address-escalera": [
+      "Patient.address.line"
+    ],
+    "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-address-municipio": [
+      "Patient.address.line"
+    ],
+    "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-address-piso": [
+      "Patient.address.line"
+    ],
+    "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-address-provincia": [
+      "Patient.address.line"
+    ],
+    "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-address-puerta": [
+      "Patient.address.line"
+    ],
+    "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-adscription-community": [
+      "Patient"
+    ],
+    "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-birth-community": [
+      "Patient"
+    ],
+    "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-birth-country": [
+      "Patient"
+    ],
+    "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-coverage-entities": [
+      "Patient"
+    ],
+    "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-coverage-insurance": [
+      "Patient"
+    ],
+    "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-coverage-mgt": [
+      "Patient"
+    ],
+    "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-coverage-providers": [
+      "Patient"
+    ],
+    "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-coverage-situation": [
+      "Patient"
+    ],
+    "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-coverage-title": [
+      "Patient"
+    ],
+    "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-creation-datetime": [
+      "Patient"
+    ],
+    "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-dniDup": [
+      "Patient"
+    ],
+    "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-foreigner": [
+      "Patient"
+    ],
+    "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-inscription-community": [
+      "Patient"
+    ],
+    "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-passive-cause": [
+      "Patient"
+    ],
+    "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-passive-date": [
+      "Patient"
+    ],
+    "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-pharmacy-indicator": [
+      "Patient"
+    ],
+    "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-pharmacy-subindicator": [
+      "Patient"
+    ],
+    "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-sexoNacimiento": [
+      "Patient"
+    ],
+    "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-surname1": [
+      "Patient.name.family"
+    ],
+    "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-surname2": [
+      "Patient.name.family"
+    ],
+    "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-temporalidad-ca": [
+      "Patient"
+    ],
+    "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-temporalidad-end-date": [
+      "Patient"
+    ],
+    "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-temporalidad-start-date": [
+      "Patient"
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/example/CodeSystem/estadosCS> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "estadosCS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem estadosCS</b></p><a name=\"estadosCS\"> </a><a name=\"hcestadosCS\"> </a><a name=\"estadosCS-en-US\"> </a><p>This  code system <code>http://sns.gob.es/fhir/tsi/CodeSystem/estadosCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"estadosCS-1\"> </a></td><td>BAJA EN SERVICIO DE SALUD</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"estadosCS-2\"> </a></td><td>BAJA POR DEFUNCION</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://sns.gob.es/fhir/tsi/CodeSystem/estadosCS"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "EstadosCS"] ; # 
+  fhir:title [ fhir:v "CodeSystem Estado Paciente"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-02-19T12:43:17+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "SNS"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SNS" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://sns.gob.es" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "my-group@example.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "CodeSystem Estado Paciente"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "2"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "1" ] ;
+     fhir:display [ fhir:v "BAJA EN SERVICIO DE SALUD" ]
+  ] [
+     fhir:code [ fhir:v "2" ] ;
+     fhir:display [ fhir:v "BAJA POR DEFUNCION" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

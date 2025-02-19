@@ -1,0 +1,65 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "indicadorFarmaciaCS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem indicadorFarmaciaCS</b></p><a name=\"indicadorFarmaciaCS\"> </a><a name=\"hcindicadorFarmaciaCS\"> </a><a name=\"indicadorFarmaciaCS-en-US\"> </a><p>This  code system <code>http://sns.gob.es/fhir/tsi/CodeSystem/indicadorFarmaciaCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">TSI_001<a name=\"indicadorFarmaciaCS-TSI_001\"> </a></td><td>Exentos de aportación</td></tr><tr><td style=\"white-space:nowrap\">TSI_002<a name=\"indicadorFarmaciaCS-TSI_002\"> </a></td><td>Aportación de un 10%</td></tr><tr><td style=\"white-space:nowrap\">TSI_003<a name=\"indicadorFarmaciaCS-TSI_003\"> </a></td><td>Aportación de un 40%</td></tr><tr><td style=\"white-space:nowrap\">TSI_004<a name=\"indicadorFarmaciaCS-TSI_004\"> </a></td><td>Aportación de un 50%</td></tr><tr><td style=\"white-space:nowrap\">TSI_005<a name=\"indicadorFarmaciaCS-TSI_005\"> </a></td><td>Aportación de un 60%</td></tr><tr><td style=\"white-space:nowrap\">TSI_006<a name=\"indicadorFarmaciaCS-TSI_006\"> </a></td><td>Excluidos de farmacia (MUFACE, MUGEJU, ISFAS) farmacia mutualidades</td></tr><tr><td style=\"white-space:nowrap\">F_003<a name=\"indicadorFarmaciaCS-F_003\"> </a></td><td>NA Aportación de un 40%</td></tr><tr><td style=\"white-space:nowrap\">F_004<a name=\"indicadorFarmaciaCS-F_004\"> </a></td><td>NA Aportación de un 50%</td></tr><tr><td style=\"white-space:nowrap\">NOFAR<a name=\"indicadorFarmaciaCS-NOFAR\"> </a></td><td>NA Aportacion de un 100%</td></tr></table></div>"
+  },
+  "url" : "http://sns.gob.es/fhir/tsi/CodeSystem/indicadorFarmaciaCS",
+  "version" : "1.0.0",
+  "name" : "IndicadorFarmaciaCS",
+  "title" : "CodeSystem Indicador Farmacia",
+  "status" : "draft",
+  "date" : "2025-02-19T12:43:17+01:00",
+  "publisher" : "SNS",
+  "contact" : [{
+    "name" : "SNS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://sns.gob.es"
+    },
+    {
+      "system" : "email",
+      "value" : "my-group@example.com"
+    }]
+  }],
+  "description" : "CodeSystem Indicador Farmacia",
+  "content" : "complete",
+  "count" : 9,
+  "concept" : [{
+    "code" : "TSI_001",
+    "display" : "Exentos de aportación"
+  },
+  {
+    "code" : "TSI_002",
+    "display" : "Aportación de un 10%"
+  },
+  {
+    "code" : "TSI_003",
+    "display" : "Aportación de un 40%"
+  },
+  {
+    "code" : "TSI_004",
+    "display" : "Aportación de un 50%"
+  },
+  {
+    "code" : "TSI_005",
+    "display" : "Aportación de un 60%"
+  },
+  {
+    "code" : "TSI_006",
+    "display" : "Excluidos de farmacia (MUFACE, MUGEJU, ISFAS) farmacia mutualidades"
+  },
+  {
+    "code" : "F_003",
+    "display" : "NA Aportación de un 40%"
+  },
+  {
+    "code" : "F_004",
+    "display" : "NA Aportación de un 50%"
+  },
+  {
+    "code" : "NOFAR",
+    "display" : "NA Aportacion de un 100%"
+  }]
+}

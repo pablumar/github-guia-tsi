@@ -1,0 +1,33 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "tipoViaCS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem tipoViaCS</b></p><a name=\"tipoViaCS\"> </a><a name=\"hctipoViaCS\"> </a><a name=\"tipoViaCS-en-US\"> </a><p>This  code system <code>http://sns.gob.es/fhir/tsi/CodeSystem/tipoViaCS</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"tipoViaCS-1\"> </a></td><td>PLAZA</td></tr></table></div>"
+  },
+  "url" : "http://sns.gob.es/fhir/tsi/CodeSystem/tipoViaCS",
+  "version" : "1.0.0",
+  "name" : "TipoViaCS",
+  "title" : "CodeSystem Tipo de Via",
+  "status" : "draft",
+  "date" : "2025-02-19T12:43:17+01:00",
+  "publisher" : "SNS",
+  "contact" : [{
+    "name" : "SNS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://sns.gob.es"
+    },
+    {
+      "system" : "email",
+      "value" : "my-group@example.com"
+    }]
+  }],
+  "description" : "CodeSystem Tipo de Via",
+  "content" : "complete",
+  "count" : 1,
+  "concept" : [{
+    "code" : "1",
+    "display" : "PLAZA"
+  }]
+}

@@ -1,0 +1,1346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="cb958ed8-a0ae-4e29-a044-9c35449c26fd"/>
+  <meta>
+    <lastUpdated value="2025-02-19T12:43:17.497+01:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://sns.gob.es/fhir/tsi/ValueSet/aseguradorasVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+              <a href="CodeSystem-aseguradorasCS.html">codesystem CodeSystem Aseguradoras v1.0.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 1 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://sns.gob.es/fhir/tsi/CodeSystem/aseguradorasCS-3"> </a>  
+                  <a href="CodeSystem-aseguradorasCS.html#aseguradorasCS-3">3</a>
+                </td>
+                <td>http://sns.gob.es/fhir/tsi/CodeSystem/aseguradorasCS</td>
+                <td>MUFACE</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://sns.gob.es/fhir/tsi/ValueSet/aseguradorasVS"/>
+        <version value="1.0.0"/>
+        <name value="AseguradorasVS"/>
+        <title value="ValueSet Aseguradoras"/>
+        <status value="draft"/>
+        <date value="2025-02-19T12:43:17+01:00"/>
+        <expansion>
+          <identifier value="urn:uuid:6e2b5b58-4cee-4737-8616-eb9675b1f9bc"/>
+          <timestamp value="2025-02-19T12:45:28+01:00"/>
+          <total value="1"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://sns.gob.es/fhir/tsi/CodeSystem/aseguradorasCS|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://sns.gob.es/fhir/tsi/CodeSystem/aseguradorasCS"/>
+            <code value="3"/>
+            <display value="MUFACE"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://sns.gob.es/fhir/tsi/ValueSet/colaboradorasVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+              <a href="CodeSystem-colaboradorasCS.html">codesystem CodeSystem Colaboradoras v1.0.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 1 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://sns.gob.es/fhir/tsi/CodeSystem/colaboradorasCS-478"> </a>  
+                  <a href="CodeSystem-colaboradorasCS.html#colaboradorasCS-478">478</a>
+                </td>
+                <td>http://sns.gob.es/fhir/tsi/CodeSystem/colaboradorasCS</td>
+                <td>COMUNIDAD DE MADRID</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://sns.gob.es/fhir/tsi/ValueSet/colaboradorasVS"/>
+        <version value="1.0.0"/>
+        <name value="ColaboradorasVS"/>
+        <title value="ValueSet Colaboradoras"/>
+        <status value="draft"/>
+        <date value="2025-02-19T12:43:17+01:00"/>
+        <expansion>
+          <identifier value="urn:uuid:b4c311d3-efa7-4c24-a4e8-792e51180b95"/>
+          <timestamp value="2025-02-19T12:45:28+01:00"/>
+          <total value="1"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://sns.gob.es/fhir/tsi/CodeSystem/colaboradorasCS|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://sns.gob.es/fhir/tsi/CodeSystem/colaboradorasCS"/>
+            <code value="478"/>
+            <display value="COMUNIDAD DE MADRID"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://sns.gob.es/fhir/tsi/ValueSet/comunidadesAutonomasVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+              <a href="CodeSystem-comunidadesAutonomasCS.html">codesystem CodeSystem Comunidades Autónomas v1.0.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 1 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://sns.gob.es/fhir/tsi/CodeSystem/comunidadesAutonomasCS-9"> </a>  
+                  <a href="CodeSystem-comunidadesAutonomasCS.html#comunidadesAutonomasCS-9">9</a>
+                </td>
+                <td>http://sns.gob.es/fhir/tsi/CodeSystem/comunidadesAutonomasCS</td>
+                <td>Cataluña</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://sns.gob.es/fhir/tsi/ValueSet/comunidadesAutonomasVS"/>
+        <version value="1.0.0"/>
+        <name value="ComunidadesAutonomasVS"/>
+        <title value="ValueSet Comunidades Autónomas"/>
+        <status value="draft"/>
+        <date value="2025-02-19T12:43:17+01:00"/>
+        <expansion>
+          <identifier value="urn:uuid:99d42e1d-de53-46c3-81b7-fcea8cec0347"/>
+          <timestamp value="2025-02-19T12:45:28+01:00"/>
+          <total value="1"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://sns.gob.es/fhir/tsi/CodeSystem/comunidadesAutonomasCS|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://sns.gob.es/fhir/tsi/CodeSystem/comunidadesAutonomasCS"/>
+            <code value="9"/>
+            <display value="Cataluña"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://sns.gob.es/fhir/tsi/ValueSet/estadoIndefVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+              <a href="CodeSystem-estadoIndefCS.html">codesystem Estado comprobación Fecha Defunción v1.0.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 5 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://sns.gob.es/fhir/tsi/CodeSystem/estadoIndefCS-0"> </a>  
+                  <a href="CodeSystem-estadoIndefCS.html#estadoIndefCS-0">0</a>
+                </td>
+                <td>http://sns.gob.es/fhir/tsi/CodeSystem/estadoIndefCS</td>
+                <td>Sin validar</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://sns.gob.es/fhir/tsi/CodeSystem/estadoIndefCS-1"> </a>  
+                  <a href="CodeSystem-estadoIndefCS.html#estadoIndefCS-1">1</a>
+                </td>
+                <td>http://sns.gob.es/fhir/tsi/CodeSystem/estadoIndefCS</td>
+                <td>Pendiente validación manual</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://sns.gob.es/fhir/tsi/CodeSystem/estadoIndefCS-2"> </a>  
+                  <a href="CodeSystem-estadoIndefCS.html#estadoIndefCS-2">2</a>
+                </td>
+                <td>http://sns.gob.es/fhir/tsi/CodeSystem/estadoIndefCS</td>
+                <td>Validado manual</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://sns.gob.es/fhir/tsi/CodeSystem/estadoIndefCS-3"> </a>  
+                  <a href="CodeSystem-estadoIndefCS.html#estadoIndefCS-3">3</a>
+                </td>
+                <td>http://sns.gob.es/fhir/tsi/CodeSystem/estadoIndefCS</td>
+                <td>Validado automático</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://sns.gob.es/fhir/tsi/CodeSystem/estadoIndefCS-4"> </a>  
+                  <a href="CodeSystem-estadoIndefCS.html#estadoIndefCS-4">4</a>
+                </td>
+                <td>http://sns.gob.es/fhir/tsi/CodeSystem/estadoIndefCS</td>
+                <td>No validable</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://sns.gob.es/fhir/tsi/ValueSet/estadoIndefVS"/>
+        <version value="1.0.0"/>
+        <name value="EstadoIndefVS"/>
+        <title value="ValueSet comprobación Fecha Defunción"/>
+        <status value="draft"/>
+        <date value="2025-02-19T12:43:17+01:00"/>
+        <expansion>
+          <identifier value="urn:uuid:99f87bba-d452-434d-b2cf-b0923d436e47"/>
+          <timestamp value="2025-02-19T12:45:28+01:00"/>
+          <total value="5"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://sns.gob.es/fhir/tsi/CodeSystem/estadoIndefCS|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://sns.gob.es/fhir/tsi/CodeSystem/estadoIndefCS"/>
+            <code value="0"/>
+            <display value="Sin validar"/>
+          </contains>
+          <contains>
+            <system value="http://sns.gob.es/fhir/tsi/CodeSystem/estadoIndefCS"/>
+            <code value="1"/>
+            <display value="Pendiente validación manual"/>
+          </contains>
+          <contains>
+            <system value="http://sns.gob.es/fhir/tsi/CodeSystem/estadoIndefCS"/>
+            <code value="2"/>
+            <display value="Validado manual"/>
+          </contains>
+          <contains>
+            <system value="http://sns.gob.es/fhir/tsi/CodeSystem/estadoIndefCS"/>
+            <code value="3"/>
+            <display value="Validado automático"/>
+          </contains>
+          <contains>
+            <system value="http://sns.gob.es/fhir/tsi/CodeSystem/estadoIndefCS"/>
+            <code value="4"/>
+            <display value="No validable"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://sns.gob.es/fhir/tsi/ValueSet/estadosVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+              <a href="CodeSystem-estadosCS.html">codesystem CodeSystem Estado Paciente v1.0.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://sns.gob.es/fhir/tsi/CodeSystem/estadosCS-1"> </a>  
+                  <a href="CodeSystem-estadosCS.html#estadosCS-1">1</a>
+                </td>
+                <td>http://sns.gob.es/fhir/tsi/CodeSystem/estadosCS</td>
+                <td>BAJA EN SERVICIO DE SALUD</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://sns.gob.es/fhir/tsi/CodeSystem/estadosCS-2"> </a>  
+                  <a href="CodeSystem-estadosCS.html#estadosCS-2">2</a>
+                </td>
+                <td>http://sns.gob.es/fhir/tsi/CodeSystem/estadosCS</td>
+                <td>BAJA POR DEFUNCION</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://sns.gob.es/fhir/tsi/ValueSet/estadosVS"/>
+        <version value="1.0.0"/>
+        <name value="EstadosVS"/>
+        <title value="ValueSet Estado Paciente"/>
+        <status value="draft"/>
+        <date value="2025-02-19T12:43:17+01:00"/>
+        <expansion>
+          <identifier value="urn:uuid:43c2acf4-2c18-4f4e-b98c-f6a5ecfcfd08"/>
+          <timestamp value="2025-02-19T12:45:28+01:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://sns.gob.es/fhir/tsi/CodeSystem/estadosCS|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://sns.gob.es/fhir/tsi/CodeSystem/estadosCS"/>
+            <code value="1"/>
+            <display value="BAJA EN SERVICIO DE SALUD"/>
+          </contains>
+          <contains>
+            <system value="http://sns.gob.es/fhir/tsi/CodeSystem/estadosCS"/>
+            <code value="2"/>
+            <display value="BAJA POR DEFUNCION"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://sns.gob.es/fhir/tsi/ValueSet/gestorasVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+              <a href="CodeSystem-gestorasCS.html">codesystem CodeSystem Gestoras v1.0.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 1 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://sns.gob.es/fhir/tsi/CodeSystem/gestorasCS-9"> </a>  
+                  <a href="CodeSystem-gestorasCS.html#gestorasCS-9">9</a>
+                </td>
+                <td>http://sns.gob.es/fhir/tsi/CodeSystem/gestorasCS</td>
+                <td>MUFACE</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://sns.gob.es/fhir/tsi/ValueSet/gestorasVS"/>
+        <version value="1.0.0"/>
+        <name value="GestorasVS"/>
+        <title value="ValueSet Gestoras"/>
+        <status value="draft"/>
+        <date value="2025-02-19T12:43:17+01:00"/>
+        <expansion>
+          <identifier value="urn:uuid:6f38f260-79f3-4eaa-bb02-a9e2032b5112"/>
+          <timestamp value="2025-02-19T12:45:29+01:00"/>
+          <total value="1"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://sns.gob.es/fhir/tsi/CodeSystem/gestorasCS|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://sns.gob.es/fhir/tsi/CodeSystem/gestorasCS"/>
+            <code value="9"/>
+            <display value="MUFACE"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://sns.gob.es/fhir/tsi/ValueSet/indicadorFarmaciaVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+              <a href="CodeSystem-indicadorFarmaciaCS.html">codesystem CodeSystem Indicador Farmacia v1.0.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 9 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://sns.gob.es/fhir/tsi/CodeSystem/indicadorFarmaciaCS-TSI_001"> </a>  
+                  <a href="CodeSystem-indicadorFarmaciaCS.html#indicadorFarmaciaCS-TSI_001">TSI_001</a>
+                </td>
+                <td>http://sns.gob.es/fhir/tsi/CodeSystem/indicadorFarmaciaCS</td>
+                <td>Exentos de aportación</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://sns.gob.es/fhir/tsi/CodeSystem/indicadorFarmaciaCS-TSI_002"> </a>  
+                  <a href="CodeSystem-indicadorFarmaciaCS.html#indicadorFarmaciaCS-TSI_002">TSI_002</a>
+                </td>
+                <td>http://sns.gob.es/fhir/tsi/CodeSystem/indicadorFarmaciaCS</td>
+                <td>Aportación de un 10%</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://sns.gob.es/fhir/tsi/CodeSystem/indicadorFarmaciaCS-TSI_003"> </a>  
+                  <a href="CodeSystem-indicadorFarmaciaCS.html#indicadorFarmaciaCS-TSI_003">TSI_003</a>
+                </td>
+                <td>http://sns.gob.es/fhir/tsi/CodeSystem/indicadorFarmaciaCS</td>
+                <td>Aportación de un 40%</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://sns.gob.es/fhir/tsi/CodeSystem/indicadorFarmaciaCS-TSI_004"> </a>  
+                  <a href="CodeSystem-indicadorFarmaciaCS.html#indicadorFarmaciaCS-TSI_004">TSI_004</a>
+                </td>
+                <td>http://sns.gob.es/fhir/tsi/CodeSystem/indicadorFarmaciaCS</td>
+                <td>Aportación de un 50%</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://sns.gob.es/fhir/tsi/CodeSystem/indicadorFarmaciaCS-TSI_005"> </a>  
+                  <a href="CodeSystem-indicadorFarmaciaCS.html#indicadorFarmaciaCS-TSI_005">TSI_005</a>
+                </td>
+                <td>http://sns.gob.es/fhir/tsi/CodeSystem/indicadorFarmaciaCS</td>
+                <td>Aportación de un 60%</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://sns.gob.es/fhir/tsi/CodeSystem/indicadorFarmaciaCS-TSI_006"> </a>  
+                  <a href="CodeSystem-indicadorFarmaciaCS.html#indicadorFarmaciaCS-TSI_006">TSI_006</a>
+                </td>
+                <td>http://sns.gob.es/fhir/tsi/CodeSystem/indicadorFarmaciaCS</td>
+                <td>Excluidos de farmacia (MUFACE, MUGEJU, ISFAS) farmacia mutualidades</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://sns.gob.es/fhir/tsi/CodeSystem/indicadorFarmaciaCS-F_003"> </a>  
+                  <a href="CodeSystem-indicadorFarmaciaCS.html#indicadorFarmaciaCS-F_003">F_003</a>
+                </td>
+                <td>http://sns.gob.es/fhir/tsi/CodeSystem/indicadorFarmaciaCS</td>
+                <td>NA Aportación de un 40%</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://sns.gob.es/fhir/tsi/CodeSystem/indicadorFarmaciaCS-F_004"> </a>  
+                  <a href="CodeSystem-indicadorFarmaciaCS.html#indicadorFarmaciaCS-F_004">F_004</a>
+                </td>
+                <td>http://sns.gob.es/fhir/tsi/CodeSystem/indicadorFarmaciaCS</td>
+                <td>NA Aportación de un 50%</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://sns.gob.es/fhir/tsi/CodeSystem/indicadorFarmaciaCS-NOFAR"> </a>  
+                  <a href="CodeSystem-indicadorFarmaciaCS.html#indicadorFarmaciaCS-NOFAR">NOFAR</a>
+                </td>
+                <td>http://sns.gob.es/fhir/tsi/CodeSystem/indicadorFarmaciaCS</td>
+                <td>NA Aportacion de un 100%</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://sns.gob.es/fhir/tsi/ValueSet/indicadorFarmaciaVS"/>
+        <version value="1.0.0"/>
+        <name value="IndicadorFarmaciaVS"/>
+        <title value="Indicador Farmacia ValueSet"/>
+        <status value="draft"/>
+        <date value="2025-02-19T12:43:17+01:00"/>
+        <expansion>
+          <identifier value="urn:uuid:3e876bbd-54ce-49bf-8c11-15b200b9311a"/>
+          <timestamp value="2025-02-19T12:45:29+01:00"/>
+          <total value="9"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://sns.gob.es/fhir/tsi/CodeSystem/indicadorFarmaciaCS|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://sns.gob.es/fhir/tsi/CodeSystem/indicadorFarmaciaCS"/>
+            <code value="TSI_001"/>
+            <display value="Exentos de aportación"/>
+          </contains>
+          <contains>
+            <system value="http://sns.gob.es/fhir/tsi/CodeSystem/indicadorFarmaciaCS"/>
+            <code value="TSI_002"/>
+            <display value="Aportación de un 10%"/>
+          </contains>
+          <contains>
+            <system value="http://sns.gob.es/fhir/tsi/CodeSystem/indicadorFarmaciaCS"/>
+            <code value="TSI_003"/>
+            <display value="Aportación de un 40%"/>
+          </contains>
+          <contains>
+            <system value="http://sns.gob.es/fhir/tsi/CodeSystem/indicadorFarmaciaCS"/>
+            <code value="TSI_004"/>
+            <display value="Aportación de un 50%"/>
+          </contains>
+          <contains>
+            <system value="http://sns.gob.es/fhir/tsi/CodeSystem/indicadorFarmaciaCS"/>
+            <code value="TSI_005"/>
+            <display value="Aportación de un 60%"/>
+          </contains>
+          <contains>
+            <system value="http://sns.gob.es/fhir/tsi/CodeSystem/indicadorFarmaciaCS"/>
+            <code value="TSI_006"/>
+            <display value="Excluidos de farmacia (MUFACE, MUGEJU, ISFAS) farmacia mutualidades"/>
+          </contains>
+          <contains>
+            <system value="http://sns.gob.es/fhir/tsi/CodeSystem/indicadorFarmaciaCS"/>
+            <code value="F_003"/>
+            <display value="NA Aportación de un 40%"/>
+          </contains>
+          <contains>
+            <system value="http://sns.gob.es/fhir/tsi/CodeSystem/indicadorFarmaciaCS"/>
+            <code value="F_004"/>
+            <display value="NA Aportación de un 50%"/>
+          </contains>
+          <contains>
+            <system value="http://sns.gob.es/fhir/tsi/CodeSystem/indicadorFarmaciaCS"/>
+            <code value="NOFAR"/>
+            <display value="NA Aportacion de un 100%"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://sns.gob.es/fhir/tsi/ValueSet/municipiosVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+              <a href="CodeSystem-municipiosCS.html">codesystem CodeSystem Municipios v1.0.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 1 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://sns.gob.es/fhir/tsi/CodeSystem/municipiosCS-2003000200"> </a>  
+                  <a href="CodeSystem-municipiosCS.html#municipiosCS-2003000200">2003000200</a>
+                </td>
+                <td>http://sns.gob.es/fhir/tsi/CodeSystem/municipiosCS</td>
+                <td>ALBACETE</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://sns.gob.es/fhir/tsi/ValueSet/municipiosVS"/>
+        <version value="1.0.0"/>
+        <name value="MunicipiosVS"/>
+        <title value="ValueSet Municipios"/>
+        <status value="draft"/>
+        <date value="2025-02-19T12:43:17+01:00"/>
+        <expansion>
+          <identifier value="urn:uuid:ac28cbdd-c3a4-46fe-852b-f439013c2b0a"/>
+          <timestamp value="2025-02-19T12:45:29+01:00"/>
+          <total value="1"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://sns.gob.es/fhir/tsi/CodeSystem/municipiosCS|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://sns.gob.es/fhir/tsi/CodeSystem/municipiosCS"/>
+            <code value="2003000200"/>
+            <display value="ALBACETE"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://sns.gob.es/fhir/tsi/ValueSet/nacionalidadesVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+              <a href="CodeSystem-nacionalidadesCS.html">codesystem CodeSystem Nacionalidades v1.0.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 1 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://sns.gob.es/fhir/tsi/CodeSystem/nacionalidadesCS-724"> </a>  
+                  <a href="CodeSystem-nacionalidadesCS.html#nacionalidadesCS-724">724</a>
+                </td>
+                <td>http://sns.gob.es/fhir/tsi/CodeSystem/nacionalidadesCS</td>
+                <td>ESPAÑA</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://sns.gob.es/fhir/tsi/ValueSet/nacionalidadesVS"/>
+        <version value="1.0.0"/>
+        <name value="NacionalidadesVS"/>
+        <title value="ValueSet Nacionalidades"/>
+        <status value="draft"/>
+        <date value="2025-02-19T12:43:17+01:00"/>
+        <expansion>
+          <identifier value="urn:uuid:07c173dc-5644-4757-9aed-664ce7484673"/>
+          <timestamp value="2025-02-19T12:45:29+01:00"/>
+          <total value="1"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://sns.gob.es/fhir/tsi/CodeSystem/nacionalidadesCS|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://sns.gob.es/fhir/tsi/CodeSystem/nacionalidadesCS"/>
+            <code value="724"/>
+            <display value="ESPAÑA"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://sns.gob.es/fhir/tsi/ValueSet/paisesVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+              <a href="CodeSystem-paisesCS.html">codesystem CodeSystem Paises v1.0.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 1 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://sns.gob.es/fhir/tsi/CodeSystem/paisesCS-724"> </a>  
+                  <a href="CodeSystem-paisesCS.html#paisesCS-724">724</a>
+                </td>
+                <td>http://sns.gob.es/fhir/tsi/CodeSystem/paisesCS</td>
+                <td>ESPAÑA</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://sns.gob.es/fhir/tsi/ValueSet/paisesVS"/>
+        <version value="1.0.0"/>
+        <name value="PaisesVS"/>
+        <title value="ValueSet Paises"/>
+        <status value="draft"/>
+        <date value="2025-02-19T12:43:17+01:00"/>
+        <expansion>
+          <identifier value="urn:uuid:66d22921-4463-4f62-8637-07aca099ef59"/>
+          <timestamp value="2025-02-19T12:45:29+01:00"/>
+          <total value="1"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://sns.gob.es/fhir/tsi/CodeSystem/paisesCS|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://sns.gob.es/fhir/tsi/CodeSystem/paisesCS"/>
+            <code value="724"/>
+            <display value="ESPAÑA"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://sns.gob.es/fhir/tsi/ValueSet/proveedoresVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+              <a href="CodeSystem-proveedoresCS.html">codesystem CodeSystem Proveedores v1.0.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 1 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://sns.gob.es/fhir/tsi/CodeSystem/proveedoresCS-20"> </a>  
+                  <a href="CodeSystem-proveedoresCS.html#proveedoresCS-20">20</a>
+                </td>
+                <td>http://sns.gob.es/fhir/tsi/CodeSystem/proveedoresCS</td>
+                <td>DKV SEGUROS</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://sns.gob.es/fhir/tsi/ValueSet/proveedoresVS"/>
+        <version value="1.0.0"/>
+        <name value="ProveedoresVS"/>
+        <title value="ValueSet Proveedores"/>
+        <status value="draft"/>
+        <date value="2025-02-19T12:43:17+01:00"/>
+        <expansion>
+          <identifier value="urn:uuid:f529723e-68de-4e4f-87f4-61bcc23157c3"/>
+          <timestamp value="2025-02-19T12:45:29+01:00"/>
+          <total value="1"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://sns.gob.es/fhir/tsi/CodeSystem/proveedoresCS|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://sns.gob.es/fhir/tsi/CodeSystem/proveedoresCS"/>
+            <code value="20"/>
+            <display value="DKV SEGUROS"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://sns.gob.es/fhir/tsi/ValueSet/provinciasVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+              <a href="CodeSystem-provinciasCS.html">codesystem CodeSystem Provincias v1.0.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 1 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://sns.gob.es/fhir/tsi/CodeSystem/provinciasCS-2"> </a>  
+                  <a href="CodeSystem-provinciasCS.html#provinciasCS-2">2</a>
+                </td>
+                <td>http://sns.gob.es/fhir/tsi/CodeSystem/provinciasCS</td>
+                <td>ALBACETE</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://sns.gob.es/fhir/tsi/ValueSet/provinciasVS"/>
+        <version value="1.0.0"/>
+        <name value="ProvinciasVS"/>
+        <title value="ValueSet Provincias"/>
+        <status value="draft"/>
+        <date value="2025-02-19T12:43:17+01:00"/>
+        <expansion>
+          <identifier value="urn:uuid:7bfffb08-64a1-436b-8cd5-4588dd9d1c25"/>
+          <timestamp value="2025-02-19T12:45:29+01:00"/>
+          <total value="1"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://sns.gob.es/fhir/tsi/CodeSystem/provinciasCS|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://sns.gob.es/fhir/tsi/CodeSystem/provinciasCS"/>
+            <code value="2"/>
+            <display value="ALBACETE"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://sns.gob.es/fhir/tsi/ValueSet/situacionesVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+              <a href="CodeSystem-situacionesCS.html">codesystem CodeSystem Situaciones v1.0.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 1 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://sns.gob.es/fhir/tsi/CodeSystem/situacionesCS-1"> </a>  
+                  <a href="CodeSystem-situacionesCS.html#situacionesCS-1">1</a>
+                </td>
+                <td>http://sns.gob.es/fhir/tsi/CodeSystem/situacionesCS</td>
+                <td>ACTIVO</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://sns.gob.es/fhir/tsi/ValueSet/situacionesVS"/>
+        <version value="1.0.0"/>
+        <name value="SituacionesVS"/>
+        <title value="ValueSet Situaciones"/>
+        <status value="draft"/>
+        <date value="2025-02-19T12:43:17+01:00"/>
+        <expansion>
+          <identifier value="urn:uuid:c53f223e-85d7-4f3a-b2c5-a8412ba7cb98"/>
+          <timestamp value="2025-02-19T12:45:29+01:00"/>
+          <total value="1"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://sns.gob.es/fhir/tsi/CodeSystem/situacionesCS|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://sns.gob.es/fhir/tsi/CodeSystem/situacionesCS"/>
+            <code value="1"/>
+            <display value="ACTIVO"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://sns.gob.es/fhir/tsi/ValueSet/subIndicadorFarmaciaVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+              <a href="CodeSystem-subIndicadorFarmaciaCS.html">codesystem CodeSystem Subindicador Farmacia v1.0.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 1 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://sns.gob.es/fhir/tsi/CodeSystem/subIndicadorFarmaciaCS-01"> </a>  
+                  <a href="CodeSystem-subIndicadorFarmaciaCS.html#subIndicadorFarmaciaCS-01">01</a>
+                </td>
+                <td>http://sns.gob.es/fhir/tsi/CodeSystem/subIndicadorFarmaciaCS</td>
+                <td>Límite de aportación mensual de 8€</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://sns.gob.es/fhir/tsi/ValueSet/subIndicadorFarmaciaVS"/>
+        <version value="1.0.0"/>
+        <name value="SubIndicadorFarmaciaVS"/>
+        <title value="ValueSet Subindicador Farmacia"/>
+        <status value="draft"/>
+        <date value="2025-02-19T12:43:17+01:00"/>
+        <expansion>
+          <identifier value="urn:uuid:cd7461d6-1581-41df-a4b7-646e9dabafcd"/>
+          <timestamp value="2025-02-19T12:45:29+01:00"/>
+          <total value="1"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://sns.gob.es/fhir/tsi/CodeSystem/subIndicadorFarmaciaCS|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://sns.gob.es/fhir/tsi/CodeSystem/subIndicadorFarmaciaCS"/>
+            <code value="01"/>
+            <display value="Límite de aportación mensual de 8€"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://sns.gob.es/fhir/tsi/ValueSet/tipoViaVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+              <a href="CodeSystem-tipoViaCS.html">codesystem CodeSystem Tipo de Via v1.0.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 1 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://sns.gob.es/fhir/tsi/CodeSystem/tipoViaCS-1"> </a>  
+                  <a href="CodeSystem-tipoViaCS.html#tipoViaCS-1">1</a>
+                </td>
+                <td>http://sns.gob.es/fhir/tsi/CodeSystem/tipoViaCS</td>
+                <td>PLAZA</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://sns.gob.es/fhir/tsi/ValueSet/tipoViaVS"/>
+        <version value="1.0.0"/>
+        <name value="TipoViaVS"/>
+        <title value="ValueSet Tipo de Via"/>
+        <status value="draft"/>
+        <date value="2025-02-19T12:43:17+01:00"/>
+        <expansion>
+          <identifier value="urn:uuid:1029a0c7-661e-4354-9ab5-19274f8231cf"/>
+          <timestamp value="2025-02-19T12:45:29+01:00"/>
+          <total value="1"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://sns.gob.es/fhir/tsi/CodeSystem/tipoViaCS|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://sns.gob.es/fhir/tsi/CodeSystem/tipoViaCS"/>
+            <code value="1"/>
+            <display value="PLAZA"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://sns.gob.es/fhir/tsi/ValueSet/titulosVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+              <a href="CodeSystem-titulosCS.html">codesystem CodeSystem Titulos v1.0.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 1 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://sns.gob.es/fhir/tsi/CodeSystem/titulosCS-97"> </a>  
+                  <a href="CodeSystem-titulosCS.html#titulosCS-97">97</a>
+                </td>
+                <td>http://sns.gob.es/fhir/tsi/CodeSystem/titulosCS</td>
+                <td>MUFACE oción privada</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://sns.gob.es/fhir/tsi/ValueSet/titulosVS"/>
+        <version value="1.0.0"/>
+        <name value="TitulosVS"/>
+        <title value="ValueSet Titulos"/>
+        <status value="draft"/>
+        <date value="2025-02-19T12:43:17+01:00"/>
+        <expansion>
+          <identifier value="urn:uuid:31ead4c2-e0fa-4845-a100-28db39779aad"/>
+          <timestamp value="2025-02-19T12:45:29+01:00"/>
+          <total value="1"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://sns.gob.es/fhir/tsi/CodeSystem/titulosCS|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://sns.gob.es/fhir/tsi/CodeSystem/titulosCS"/>
+            <code value="97"/>
+            <display value="MUFACE oción privada"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

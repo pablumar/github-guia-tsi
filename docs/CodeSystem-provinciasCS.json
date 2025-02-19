@@ -1,0 +1,33 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "provinciasCS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem provinciasCS</b></p><a name=\"provinciasCS\"> </a><a name=\"hcprovinciasCS\"> </a><a name=\"provinciasCS-en-US\"> </a><p>This  code system <code>http://sns.gob.es/fhir/tsi/CodeSystem/provinciasCS</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"provinciasCS-2\"> </a></td><td>ALBACETE</td></tr></table></div>"
+  },
+  "url" : "http://sns.gob.es/fhir/tsi/CodeSystem/provinciasCS",
+  "version" : "1.0.0",
+  "name" : "ProvinciasCS",
+  "title" : "CodeSystem Provincias",
+  "status" : "draft",
+  "date" : "2025-02-19T12:43:17+01:00",
+  "publisher" : "SNS",
+  "contact" : [{
+    "name" : "SNS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://sns.gob.es"
+    },
+    {
+      "system" : "email",
+      "value" : "my-group@example.com"
+    }]
+  }],
+  "description" : "CodeSystem Provincias",
+  "content" : "complete",
+  "count" : 1,
+  "concept" : [{
+    "code" : "2",
+    "display" : "ALBACETE"
+  }]
+}

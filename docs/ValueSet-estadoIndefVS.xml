@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="estadoIndefVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet estadoIndefVS</b></p><a name="estadoIndefVS"> </a><a name="hcestadoIndefVS"> </a><a name="estadoIndefVS-en-US"> </a><ul><li>Include all codes defined in <a href="CodeSystem-estadoIndefCS.html"><code>http://sns.gob.es/fhir/tsi/CodeSystem/estadoIndefCS</code></a></li></ul></div>
+  </text>
+  <url value="http://sns.gob.es/fhir/tsi/ValueSet/estadoIndefVS"/>
+  <version value="1.0.0"/>
+  <name value="EstadoIndefVS"/>
+  <title value="ValueSet comprobación Fecha Defunción"/>
+  <status value="draft"/>
+  <date value="2025-02-19T12:43:17+01:00"/>
+  <publisher value="SNS"/>
+  <contact>
+    <name value="SNS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://sns.gob.es"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="my-group@example.com"/>
+    </telecom>
+  </contact>
+  <description value="ValueSet comprobación Fecha Defunción"/>
+  <compose>
+    <include>
+      <system value="http://sns.gob.es/fhir/tsi/CodeSystem/estadoIndefCS"/>
+    </include>
+  </compose>
+</ValueSet>

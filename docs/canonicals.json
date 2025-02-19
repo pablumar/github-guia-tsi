@@ -1,0 +1,485 @@
+[
+  {
+    "id" : "tsi.sns.implementationGuide",
+    "type" : "ImplementationGuide",
+    "url" : "http://example.com/fhir/example",
+    "version" : "1.0.0",
+    "name" : "TarjetaSanitariaIndividualIG"
+  },
+  {
+    "id" : "aseguradorasCS",
+    "type" : "CodeSystem",
+    "url" : "http://sns.gob.es/fhir/tsi/CodeSystem/aseguradorasCS",
+    "version" : "1.0.0",
+    "name" : "AseguradorasCS"
+  },
+  {
+    "id" : "colaboradorasCS",
+    "type" : "CodeSystem",
+    "url" : "http://sns.gob.es/fhir/tsi/CodeSystem/colaboradorasCS",
+    "version" : "1.0.0",
+    "name" : "ColaboradorasCS"
+  },
+  {
+    "id" : "comunidadesAutonomasCS",
+    "type" : "CodeSystem",
+    "url" : "http://sns.gob.es/fhir/tsi/CodeSystem/comunidadesAutonomasCS",
+    "version" : "1.0.0",
+    "name" : "ComunidadesAutonomasCS"
+  },
+  {
+    "id" : "estadoIndefCS",
+    "type" : "CodeSystem",
+    "url" : "http://sns.gob.es/fhir/tsi/CodeSystem/estadoIndefCS",
+    "version" : "1.0.0",
+    "name" : "EstadoIndefCS"
+  },
+  {
+    "id" : "estadosCS",
+    "type" : "CodeSystem",
+    "url" : "http://sns.gob.es/fhir/tsi/CodeSystem/estadosCS",
+    "version" : "1.0.0",
+    "name" : "EstadosCS"
+  },
+  {
+    "id" : "gestorasCS",
+    "type" : "CodeSystem",
+    "url" : "http://sns.gob.es/fhir/tsi/CodeSystem/gestorasCS",
+    "version" : "1.0.0",
+    "name" : "GestorasCS"
+  },
+  {
+    "id" : "indicadorFarmaciaCS",
+    "type" : "CodeSystem",
+    "url" : "http://sns.gob.es/fhir/tsi/CodeSystem/indicadorFarmaciaCS",
+    "version" : "1.0.0",
+    "name" : "IndicadorFarmaciaCS"
+  },
+  {
+    "id" : "municipiosCS",
+    "type" : "CodeSystem",
+    "url" : "http://sns.gob.es/fhir/tsi/CodeSystem/municipiosCS",
+    "version" : "1.0.0",
+    "name" : "MunicipiosCS"
+  },
+  {
+    "id" : "nacionalidadesCS",
+    "type" : "CodeSystem",
+    "url" : "http://sns.gob.es/fhir/tsi/CodeSystem/nacionalidadesCS",
+    "version" : "1.0.0",
+    "name" : "NacionalidadesCS"
+  },
+  {
+    "id" : "paisesCS",
+    "type" : "CodeSystem",
+    "url" : "http://sns.gob.es/fhir/tsi/CodeSystem/paisesCS",
+    "version" : "1.0.0",
+    "name" : "PaisesCS"
+  },
+  {
+    "id" : "proveedoresCS",
+    "type" : "CodeSystem",
+    "url" : "http://sns.gob.es/fhir/tsi/CodeSystem/proveedoresCS",
+    "version" : "1.0.0",
+    "name" : "ProveedoresCS"
+  },
+  {
+    "id" : "provinciasCS",
+    "type" : "CodeSystem",
+    "url" : "http://sns.gob.es/fhir/tsi/CodeSystem/provinciasCS",
+    "version" : "1.0.0",
+    "name" : "ProvinciasCS"
+  },
+  {
+    "id" : "situacionesCS",
+    "type" : "CodeSystem",
+    "url" : "http://sns.gob.es/fhir/tsi/CodeSystem/situacionesCS",
+    "version" : "1.0.0",
+    "name" : "SituacionesCS"
+  },
+  {
+    "id" : "subIndicadorFarmaciaCS",
+    "type" : "CodeSystem",
+    "url" : "http://sns.gob.es/fhir/tsi/CodeSystem/subIndicadorFarmaciaCS",
+    "version" : "1.0.0",
+    "name" : "SubIndicadorFarmaciaCS"
+  },
+  {
+    "id" : "tipoViaCS",
+    "type" : "CodeSystem",
+    "url" : "http://sns.gob.es/fhir/tsi/CodeSystem/tipoViaCS",
+    "version" : "1.0.0",
+    "name" : "TipoViaCS"
+  },
+  {
+    "id" : "titulosCS",
+    "type" : "CodeSystem",
+    "url" : "http://sns.gob.es/fhir/tsi/CodeSystem/titulosCS",
+    "version" : "1.0.0",
+    "name" : "TitulosCS"
+  },
+  {
+    "id" : "PatientSNS",
+    "type" : "StructureDefinition",
+    "url" : "http://sns.gob.es/fhir/tsi/StructureDefinition/PatientSNS",
+    "version" : "1.0.0",
+    "name" : "PatientSNS"
+  },
+  {
+    "id" : "estado-comprobacion-indef",
+    "type" : "StructureDefinition",
+    "url" : "http://sns.gob.es/fhir/tsi/StructureDefinition/estado-comprobacion-indef",
+    "version" : "1.0.0",
+    "name" : "EstadoComprobacion"
+  },
+  {
+    "id" : "iso21090-ADXP-houseNumber",
+    "type" : "StructureDefinition",
+    "url" : "http://sns.gob.es/fhir/tsi/StructureDefinition/iso21090-ADXP-houseNumber",
+    "version" : "1.0.0",
+    "name" : "Numero"
+  },
+  {
+    "id" : "iso21090-ADXP-postBox",
+    "type" : "StructureDefinition",
+    "url" : "http://sns.gob.es/fhir/tsi/StructureDefinition/iso21090-ADXP-postBox",
+    "version" : "1.0.0",
+    "name" : "CodigoPostal"
+  },
+  {
+    "id" : "iso21090-ADXP-streetName",
+    "type" : "StructureDefinition",
+    "url" : "http://sns.gob.es/fhir/tsi/StructureDefinition/iso21090-ADXP-streetName",
+    "version" : "1.0.0",
+    "name" : "NombreVia"
+  },
+  {
+    "id" : "iso21090-ADXP-streetNameType",
+    "type" : "StructureDefinition",
+    "url" : "http://sns.gob.es/fhir/tsi/StructureDefinition/iso21090-ADXP-streetNameType",
+    "version" : "1.0.0",
+    "name" : "TipoVia"
+  },
+  {
+    "id" : "patient-address-bis",
+    "type" : "StructureDefinition",
+    "url" : "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-address-bis",
+    "version" : "1.0.0",
+    "name" : "Bis"
+  },
+  {
+    "id" : "patient-address-bloque",
+    "type" : "StructureDefinition",
+    "url" : "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-address-bloque",
+    "version" : "1.0.0",
+    "name" : "Bloque"
+  },
+  {
+    "id" : "patient-address-escalera",
+    "type" : "StructureDefinition",
+    "url" : "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-address-escalera",
+    "version" : "1.0.0",
+    "name" : "Escalera"
+  },
+  {
+    "id" : "patient-address-municipio",
+    "type" : "StructureDefinition",
+    "url" : "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-address-municipio",
+    "version" : "1.0.0",
+    "name" : "Municipio"
+  },
+  {
+    "id" : "patient-address-piso",
+    "type" : "StructureDefinition",
+    "url" : "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-address-piso",
+    "version" : "1.0.0",
+    "name" : "Piso"
+  },
+  {
+    "id" : "patient-address-provincia",
+    "type" : "StructureDefinition",
+    "url" : "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-address-provincia",
+    "version" : "1.0.0",
+    "name" : "Provincia"
+  },
+  {
+    "id" : "patient-address-puerta",
+    "type" : "StructureDefinition",
+    "url" : "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-address-puerta",
+    "version" : "1.0.0",
+    "name" : "Puerta"
+  },
+  {
+    "id" : "patient-adscription-community",
+    "type" : "StructureDefinition",
+    "url" : "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-adscription-community",
+    "version" : "1.0.0",
+    "name" : "CAAdscripcion"
+  },
+  {
+    "id" : "patient-birth-community",
+    "type" : "StructureDefinition",
+    "url" : "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-birth-community",
+    "version" : "1.0.0",
+    "name" : "CANacimiento"
+  },
+  {
+    "id" : "patient-birth-country",
+    "type" : "StructureDefinition",
+    "url" : "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-birth-country",
+    "version" : "1.0.0",
+    "name" : "PaisNacimiento"
+  },
+  {
+    "id" : "patient-coverage-entities",
+    "type" : "StructureDefinition",
+    "url" : "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-coverage-entities",
+    "version" : "1.0.0",
+    "name" : "EntidadesColaboradoras"
+  },
+  {
+    "id" : "patient-coverage-insurance",
+    "type" : "StructureDefinition",
+    "url" : "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-coverage-insurance",
+    "version" : "1.0.0",
+    "name" : "EntidadesAseguradoras"
+  },
+  {
+    "id" : "patient-coverage-mgt",
+    "type" : "StructureDefinition",
+    "url" : "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-coverage-mgt",
+    "version" : "1.0.0",
+    "name" : "EntidadesGestoras"
+  },
+  {
+    "id" : "patient-coverage-providers",
+    "type" : "StructureDefinition",
+    "url" : "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-coverage-providers",
+    "version" : "1.0.0",
+    "name" : "Proveedores"
+  },
+  {
+    "id" : "patient-coverage-situation",
+    "type" : "StructureDefinition",
+    "url" : "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-coverage-situation",
+    "version" : "1.0.0",
+    "name" : "Situacion"
+  },
+  {
+    "id" : "patient-coverage-title",
+    "type" : "StructureDefinition",
+    "url" : "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-coverage-title",
+    "version" : "1.0.0",
+    "name" : "Titulo"
+  },
+  {
+    "id" : "patient-creation-datetime",
+    "type" : "StructureDefinition",
+    "url" : "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-creation-datetime",
+    "version" : "1.0.0",
+    "name" : "CreationDateTime"
+  },
+  {
+    "id" : "patient-dniDup",
+    "type" : "StructureDefinition",
+    "url" : "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-dniDup",
+    "version" : "1.0.0",
+    "name" : "FlagDuplicadoDNI"
+  },
+  {
+    "id" : "patient-foreigner",
+    "type" : "StructureDefinition",
+    "url" : "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-foreigner",
+    "version" : "1.0.0",
+    "name" : "Extranjero"
+  },
+  {
+    "id" : "patient-inscription-community",
+    "type" : "StructureDefinition",
+    "url" : "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-inscription-community",
+    "version" : "1.0.0",
+    "name" : "CAInscCoberturas"
+  },
+  {
+    "id" : "patient-passive-cause",
+    "type" : "StructureDefinition",
+    "url" : "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-passive-cause",
+    "version" : "1.0.0",
+    "name" : "CausaPasivo"
+  },
+  {
+    "id" : "patient-passive-date",
+    "type" : "StructureDefinition",
+    "url" : "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-passive-date",
+    "version" : "1.0.0",
+    "name" : "FechaPasoPasivo"
+  },
+  {
+    "id" : "patient-pharmacy-indicator",
+    "type" : "StructureDefinition",
+    "url" : "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-pharmacy-indicator",
+    "version" : "1.0.0",
+    "name" : "IndicadorFarmacia"
+  },
+  {
+    "id" : "patient-pharmacy-subindicator",
+    "type" : "StructureDefinition",
+    "url" : "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-pharmacy-subindicator",
+    "version" : "1.0.0",
+    "name" : "SubIndicadorFarmacia"
+  },
+  {
+    "id" : "patient-sexoNacimiento",
+    "type" : "StructureDefinition",
+    "url" : "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-sexoNacimiento",
+    "version" : "1.0.0",
+    "name" : "SexoNacimiento"
+  },
+  {
+    "id" : "patient-surname1",
+    "type" : "StructureDefinition",
+    "url" : "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-surname1",
+    "version" : "1.0.0",
+    "name" : "Apellido1"
+  },
+  {
+    "id" : "patient-surname2",
+    "type" : "StructureDefinition",
+    "url" : "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-surname2",
+    "version" : "1.0.0",
+    "name" : "Apellido2"
+  },
+  {
+    "id" : "patient-temporalidad-ca",
+    "type" : "StructureDefinition",
+    "url" : "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-temporalidad-ca",
+    "version" : "1.0.0",
+    "name" : "CATemporalidad"
+  },
+  {
+    "id" : "patient-temporalidad-end-date",
+    "type" : "StructureDefinition",
+    "url" : "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-temporalidad-end-date",
+    "version" : "1.0.0",
+    "name" : "FechaFinTemporalidad"
+  },
+  {
+    "id" : "patient-temporalidad-start-date",
+    "type" : "StructureDefinition",
+    "url" : "http://sns.gob.es/fhir/tsi/StructureDefinition/patient-temporalidad-start-date",
+    "version" : "1.0.0",
+    "name" : "FechaInicioTemporalidad"
+  },
+  {
+    "id" : "aseguradorasVS",
+    "type" : "ValueSet",
+    "url" : "http://sns.gob.es/fhir/tsi/ValueSet/aseguradorasVS",
+    "version" : "1.0.0",
+    "name" : "AseguradorasVS"
+  },
+  {
+    "id" : "colaboradorasVS",
+    "type" : "ValueSet",
+    "url" : "http://sns.gob.es/fhir/tsi/ValueSet/colaboradorasVS",
+    "version" : "1.0.0",
+    "name" : "ColaboradorasVS"
+  },
+  {
+    "id" : "comunidadesAutonomasVS",
+    "type" : "ValueSet",
+    "url" : "http://sns.gob.es/fhir/tsi/ValueSet/comunidadesAutonomasVS",
+    "version" : "1.0.0",
+    "name" : "ComunidadesAutonomasVS"
+  },
+  {
+    "id" : "estadoIndefVS",
+    "type" : "ValueSet",
+    "url" : "http://sns.gob.es/fhir/tsi/ValueSet/estadoIndefVS",
+    "version" : "1.0.0",
+    "name" : "EstadoIndefVS"
+  },
+  {
+    "id" : "estadosVS",
+    "type" : "ValueSet",
+    "url" : "http://sns.gob.es/fhir/tsi/ValueSet/estadosVS",
+    "version" : "1.0.0",
+    "name" : "EstadosVS"
+  },
+  {
+    "id" : "gestorasVS",
+    "type" : "ValueSet",
+    "url" : "http://sns.gob.es/fhir/tsi/ValueSet/gestorasVS",
+    "version" : "1.0.0",
+    "name" : "GestorasVS"
+  },
+  {
+    "id" : "indicadorFarmaciaVS",
+    "type" : "ValueSet",
+    "url" : "http://sns.gob.es/fhir/tsi/ValueSet/indicadorFarmaciaVS",
+    "version" : "1.0.0",
+    "name" : "IndicadorFarmaciaVS"
+  },
+  {
+    "id" : "municipiosVS",
+    "type" : "ValueSet",
+    "url" : "http://sns.gob.es/fhir/tsi/ValueSet/municipiosVS",
+    "version" : "1.0.0",
+    "name" : "MunicipiosVS"
+  },
+  {
+    "id" : "nacionalidadesVS",
+    "type" : "ValueSet",
+    "url" : "http://sns.gob.es/fhir/tsi/ValueSet/nacionalidadesVS",
+    "version" : "1.0.0",
+    "name" : "NacionalidadesVS"
+  },
+  {
+    "id" : "paisesVS",
+    "type" : "ValueSet",
+    "url" : "http://sns.gob.es/fhir/tsi/ValueSet/paisesVS",
+    "version" : "1.0.0",
+    "name" : "PaisesVS"
+  },
+  {
+    "id" : "proveedoresVS",
+    "type" : "ValueSet",
+    "url" : "http://sns.gob.es/fhir/tsi/ValueSet/proveedoresVS",
+    "version" : "1.0.0",
+    "name" : "ProveedoresVS"
+  },
+  {
+    "id" : "provinciasVS",
+    "type" : "ValueSet",
+    "url" : "http://sns.gob.es/fhir/tsi/ValueSet/provinciasVS",
+    "version" : "1.0.0",
+    "name" : "ProvinciasVS"
+  },
+  {
+    "id" : "situacionesVS",
+    "type" : "ValueSet",
+    "url" : "http://sns.gob.es/fhir/tsi/ValueSet/situacionesVS",
+    "version" : "1.0.0",
+    "name" : "SituacionesVS"
+  },
+  {
+    "id" : "subIndicadorFarmaciaVS",
+    "type" : "ValueSet",
+    "url" : "http://sns.gob.es/fhir/tsi/ValueSet/subIndicadorFarmaciaVS",
+    "version" : "1.0.0",
+    "name" : "SubIndicadorFarmaciaVS"
+  },
+  {
+    "id" : "tipoViaVS",
+    "type" : "ValueSet",
+    "url" : "http://sns.gob.es/fhir/tsi/ValueSet/tipoViaVS",
+    "version" : "1.0.0",
+    "name" : "TipoViaVS"
+  },
+  {
+    "id" : "titulosVS",
+    "type" : "ValueSet",
+    "url" : "http://sns.gob.es/fhir/tsi/ValueSet/titulosVS",
+    "version" : "1.0.0",
+    "name" : "TitulosVS"
+  }
+]

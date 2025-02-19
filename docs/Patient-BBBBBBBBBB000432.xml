@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="BBBBBBBBBB000432"/>
+  <meta>
+    <profile value="http://sns.gob.es/fhir/tsi/StructureDefinition/PatientSNS"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Patient BBBBBBBBBB000432</b></p><a name="BBBBBBBBBB000432"> </a><a name="hcBBBBBBBBBB000432"> </a><a name="BBBBBBBBBB000432-en-US"> </a><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">CARLOTA FERNANDEZ FERNANDEZ  Female, DoB: 1985-11-03 ( CIP: ?ngen-9? (use: official, ))</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td>true</td><td style="background-color: #f3f5da" title="Known status of Patient">Deceased:</td><td colspan="3">2020-10-04</td></tr><tr><td style="background-color: #f3f5da" title="Other Ids (see the one above)">Other Ids:</td><td colspan="3"><ul><li>CIP SNS/BBBBBBBBBB000432 (use: official, )</li><li>DNI / NIE/23054004T (use: official, )</li><li>NASS_TITULAR/010000014123 (use: official, )</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Detail</td><td colspan="3"><ul><li>ph: 983/117722(Work)</li><li>ph: 983117722(Work)</li><li>ph: 983/223344(Work)</li><li>ph: 983223344(Work)</li><li><a href="mailto:email@email.com">email@email.com</a></li><li> CAÑADA DE GALLEGO 0 CONSULTORIO SMS CONSULTORIO SMS 30026000601 30 MURCIA 23080 España </li></ul></td></tr></table></div>
+  </text>
+  <extension url="http://sns.gob.es/fhir/TSI/StructureDefinition/patient-sexoNacimiento">
+    <valueCoding>
+      <system value="http://sns.gob.es/fhir/TSI/CodeSystem/sexoNacimientoCS"/>
+      <code value="2"/>
+      <display value="MUJER"/>
+    </valueCoding>
+  </extension>
+  <extension url="http://sns.gob.es/fhir/TSI/StructureDefinition/patient-birth-country">
+    <valueCoding>
+      <system value="http://sns.gob.es/fhir/TSI/CodeSystem/paisesCS"/>
+      <code value="724"/>
+      <display value="España"/>
+    </valueCoding>
+  </extension>
+  <extension url="http://sns.gob.es/fhir/TSI/StructureDefinition/patient-coverage-insurance">
+    <valueCoding>
+      <system value="http://sns.gob.es/fhir/TSI/CodeSystem/aseguradorasCS"/>
+      <code value="1"/>
+      <display value="INSS"/>
+    </valueCoding>
+  </extension>
+  <extension url="http://sns.gob.es/fhir/TSI/StructureDefinition/patient-coverage-mgt">
+    <valueCoding>
+      <system value="http://sns.gob.es/fhir/TSI/CodeSystem/gestorasCS"/>
+      <code value="22"/>
+      <display value="SERVICIO MURCIANO DE SALUD"/>
+    </valueCoding>
+  </extension>
+  <extension url="http://sns.gob.es/fhir/TSI/StructureDefinition/patient-coverage-providers">
+    <valueCoding>
+      <system value="http://sns.gob.es/fhir/TSI/CodeSystem/proveedoresCS"/>
+      <code value="34"/>
+      <display value="SERVICIO MURCIANO DE SALUD"/>
+    </valueCoding>
+  </extension>
+  <extension url="http://sns.gob.es/fhir/TSI/StructureDefinition/patient-coverage-title">
+    <valueCoding>
+      <system value="http://sns.gob.es/fhir/TSI/CodeSystem/titulosCS"/>
+      <code value="19"/>
+      <display value="GENERICO SEGURIDAD SOCIAL"/>
+    </valueCoding>
+  </extension>
+  <extension url="http://sns.gob.es/fhir/TSI/StructureDefinition/patient-coverage-situation">
+    <valueCoding>
+      <system value="http://sns.gob.es/fhir/TSI/CodeSystem/situacionesCS"/>
+      <code value="1"/>
+      <display value="ACTIVO"/>
+    </valueCoding>
+  </extension>
+  <extension url="http://sns.gob.es/fhir/TSI/StructureDefinition/patient-creation-date">
+    <valueDate value="2012-07-10"/>
+  </extension>
+  <extension url="http://sns.gob.es/fhir/TSI/StructureDefinition/estado-comprobacion-indef">
+    <valueCoding>
+      <system value="http://sns.gob.es/fhir/TSI/CodeSystem/estadoIndefVS"/>
+      <code value="3"/>
+      <display value="Validado automático"/>
+    </valueCoding>
+  </extension>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="http://sns.gob.es/fhir/TSI/ValueSet/tipoDocumentoVS"/>
+        <code value="CIP-SNS"/>
+        <display value="CIP SNS"/>
+      </coding>
+    </type>
+    <system value="2.16.724.4.40"/>
+    <value value="BBBBBBBBBB000432"/>
+  </identifier>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="http://sns.gob.es/fhir/TSI/ValueSet/tipoDocumentoVS"/>
+        <code value="NNESP"/>
+        <display value="DNI / NIE"/>
+      </coding>
+    </type>
+    <system value="1.3.6.1.4.1.19126.3"/>
+    <value value="23054004T"/>
+  </identifier>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="http://sns.gob.es/fhir/TSI/ValueSet/tipoDocumentoVS"/>
+        <code value="NASS_TITULAR"/>
+        <display value="NASS_TITULAR"/>
+      </coding>
+    </type>
+    <system value="1.3.6.1.4.1.19126.4"/>
+    <value value="010000014123"/>
+  </identifier>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="http://sns.gob.es/fhir/TSI/ValueSet/tipoDocumentoVS"/>
+        <code value="CIP"/>
+        <display value="CIP"/>
+      </coding>
+    </type>
+    <system value="2.16.724.4.41"/>
+    <assigner>
+      <identifier>
+        <system value="2.16.724.4.42"/>
+      </identifier>
+    </assigner>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <family value="FERNANDEZ FERNANDEZ">
+      <extension url="http://sns.gob.es/fhir/TSI/StructureDefinition/patient-surname1">
+        <valueString value="FERNANDEZ"/>
+      </extension>
+      <extension url="http://sns.gob.es/fhir/TSI/StructureDefinition/patient-surname2">
+        <valueString value="FERNANDEZ"/>
+      </extension>
+    </family>
+    <given value="CARLOTA"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="983/117722"/>
+    <use value="work"/>
+    <rank value="1"/>
+  </telecom>
+  <telecom>
+    <system value="phone"/>
+    <value value="983117722"/>
+    <use value="work"/>
+    <rank value="2"/>
+  </telecom>
+  <telecom>
+    <system value="phone"/>
+    <value value="983/223344"/>
+    <use value="work"/>
+    <rank value="3"/>
+  </telecom>
+  <telecom>
+    <system value="phone"/>
+    <value value="983223344"/>
+    <use value="work"/>
+    <rank value="4"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="email@email.com"/>
+    <use value="home"/>
+    <rank value="5"/>
+  </telecom>
+  <gender value="female"/>
+  <birthDate value="1985-11-03"/>
+  <deceasedDateTime value="2020-10-04"/>
+  <address>
+    <line value=" CAÑADA DE GALLEGO 0 CONSULTORIO SMS CONSULTORIO SMS 30026000601 30">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+        <valueString value="CAÑADA DE GALLEGO"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+        <valueString value="0"/>
+      </extension>
+      <extension url="http://sns.gob.es/fhir/TSI/StructureDefinition/patient-address-bloque">
+        <valueString value="CONSULTORIO SMS"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox">
+        <valueString value="30876"/>
+      </extension>
+      <extension url="http://sns.gob.es/fhir/TSI/StructureDefinition/patient-address-city">
+        <valueCoding>
+          <system value="http://sns.gob.es/fhir/TSI/CodeSystem/municipiosCS"/>
+          <code value="30026000601"/>
+          <display value="CAÑADA DE GALLEGO"/>
+        </valueCoding>
+      </extension>
+      <extension url="http://sns.gob.es/fhir/TSI/StructureDefinition/patient-address-district">
+        <valueCoding>
+          <system value="http://sns.gob.es/fhir/TSI/CodeSystem/provinciasCS"/>
+          <code value="30"/>
+          <display value="MURCIA"/>
+        </valueCoding>
+      </extension>
+    </line>
+    <city value="MURCIA"/>
+    <district value="Madrid"/>
+    <postalCode value="23080"/>
+    <country value="España">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding">
+        <valueCoding>
+          <system value="http://terminology.ehdsi.eu/ValueSet/eHDSICountry"/>
+          <code value="ES"/>
+          <display value="SPAIN"/>
+        </valueCoding>
+      </extension>
+    </country>
+  </address>
+</Patient>

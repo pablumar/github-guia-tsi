@@ -1,0 +1,33 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "aseguradorasCS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem aseguradorasCS</b></p><a name=\"aseguradorasCS\"> </a><a name=\"hcaseguradorasCS\"> </a><a name=\"aseguradorasCS-en-US\"> </a><p>This  code system <code>http://sns.gob.es/fhir/tsi/CodeSystem/aseguradorasCS</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"aseguradorasCS-3\"> </a></td><td>MUFACE</td></tr></table></div>"
+  },
+  "url" : "http://sns.gob.es/fhir/tsi/CodeSystem/aseguradorasCS",
+  "version" : "1.0.0",
+  "name" : "AseguradorasCS",
+  "title" : "CodeSystem Aseguradoras",
+  "status" : "draft",
+  "date" : "2025-02-19T12:43:17+01:00",
+  "publisher" : "SNS",
+  "contact" : [{
+    "name" : "SNS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://sns.gob.es"
+    },
+    {
+      "system" : "email",
+      "value" : "my-group@example.com"
+    }]
+  }],
+  "description" : "CodeSystem Aseguradoras",
+  "content" : "complete",
+  "count" : 1,
+  "concept" : [{
+    "code" : "3",
+    "display" : "MUFACE"
+  }]
+}

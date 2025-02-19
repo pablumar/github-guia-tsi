@@ -1,0 +1,32 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "indicadorFarmaciaVS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet indicadorFarmaciaVS</b></p><a name=\"indicadorFarmaciaVS\"> </a><a name=\"hcindicadorFarmaciaVS\"> </a><a name=\"indicadorFarmaciaVS-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-indicadorFarmaciaCS.html\"><code>http://sns.gob.es/fhir/tsi/CodeSystem/indicadorFarmaciaCS</code></a></li></ul></div>"
+  },
+  "url" : "http://sns.gob.es/fhir/tsi/ValueSet/indicadorFarmaciaVS",
+  "version" : "1.0.0",
+  "name" : "IndicadorFarmaciaVS",
+  "title" : "Indicador Farmacia ValueSet",
+  "status" : "draft",
+  "date" : "2025-02-19T12:43:17+01:00",
+  "publisher" : "SNS",
+  "contact" : [{
+    "name" : "SNS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://sns.gob.es"
+    },
+    {
+      "system" : "email",
+      "value" : "my-group@example.com"
+    }]
+  }],
+  "description" : "Indicador Farmacia ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://sns.gob.es/fhir/tsi/CodeSystem/indicadorFarmaciaCS"
+    }]
+  }
+}

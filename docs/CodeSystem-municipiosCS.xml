@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="municipiosCS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem municipiosCS</b></p><a name="municipiosCS"> </a><a name="hcmunicipiosCS"> </a><a name="municipiosCS-en-US"> </a><p>This  code system <code>http://sns.gob.es/fhir/tsi/CodeSystem/municipiosCS</code> defines the following code:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">2003000200<a name="municipiosCS-2003000200"> </a></td><td>ALBACETE</td></tr></table></div>
+  </text>
+  <url value="http://sns.gob.es/fhir/tsi/CodeSystem/municipiosCS"/>
+  <version value="1.0.0"/>
+  <name value="MunicipiosCS"/>
+  <title value="CodeSystem Municipios"/>
+  <status value="draft"/>
+  <date value="2025-02-19T12:43:17+01:00"/>
+  <publisher value="SNS"/>
+  <contact>
+    <name value="SNS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://sns.gob.es"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="my-group@example.com"/>
+    </telecom>
+  </contact>
+  <description value="CodeSystem Municipios"/>
+  <content value="complete"/>
+  <count value="1"/>
+  <concept>
+    <code value="2003000200"/>
+    <display value="ALBACETE"/>
+  </concept>
+</CodeSystem>

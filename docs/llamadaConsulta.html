@@ -1,0 +1,747 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Definición Consulta Ciudadano - Guía de Implementación Tarjeta Sanitaria Individual (TSI) v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+  	<link rel="stylesheet" href="assets/css/cqf.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"10"}
+    h3,h4,h5,h6{--heading-prefix:"10"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+
+          <!-- Placeholder for child template header declarations -->
+
+<div>
+  <table width="100%">
+    <tr>
+      <td align="center">
+        <img src="assets/images/logoGlobal.png">
+      
+    
+  
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación Tarjeta Sanitaria Individual (TSI)</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - R4
+
+
+            </span>
+          </p>
+        </div>
+         <!-- /container -->
+        <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Introducción</a>
+  </li>
+  <li>
+    <a href="toc.html">Listado de Contenidos</a>
+  </li>
+  <li>
+    <a href="diagramaSec.html">Diagrama de Secuencia</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Escenarios
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="llamadaConsulta.html">Consulta de Ciudadanos</a>
+      </li>
+      <li>
+        <a href="llamadaAlta.html">Alta Ciudadanos</a>
+      </li>
+      <li>
+        <a href="llamadaModificacion.html">Modificacion Ciudadanos</a>
+      </li>
+      <li>
+        <a href="llamadaBaja.html">Baja Ciudadanos</a>
+      </li>
+      <li>
+        <a href="llamadaNotificar.html">Notificar Cambio</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementación
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="consultarCiudadano.html">Consulta de Ciudadanos</a>
+      </li>
+      <li>
+        <a href="consultarCiudadanoEuropeo.html">Consulta de Ciudadano Europeo</a>
+      </li>
+      <li>
+        <a href="altaCiudadano.html">Alta Ciudadanos</a>
+      </li>
+      <li>
+        <a href="modificarCiudadano.html">Modificacion Ciudadanos</a>
+      </li>
+      <li>
+        <a href="bajaCiudadano.html">Baja Ciudadanos</a>
+      </li>
+      <li>
+        <a href="notificarCambio.html">Notificar Cambio</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artefactos
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">Listado</a>
+      </li>
+      <li>
+        <a href="mapeo.html">Mapeos</a>
+      </li>
+      <li>
+        <a href="terminologias.html">Terminologias</a>
+      </li>
+      <li>
+        <a href="seguridad.html">Seguridad</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Definición Consulta Ciudadano</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">Guía de Implementación Tarjeta Sanitaria Individual (TSI) - Local Development build (v1.0.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="http://example.com/fhir/example/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Definición Consulta Ciudadano</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div>
+  <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
+</div>
+<p><strong>Descripción:</strong> Devuelve todos los recursos FHIR
+Patient coincidentes con la búsqueda realizada.</p>
+<p><strong>Mensaje de Entrada</strong>: C001</p>
+<p><strong>Mensaje de Salida</strong>: C003</p>
+<p><strong>Endpoint:</strong> /Patient</p>
+<p><strong>Método:</strong> GET</p>
+<p><strong>Cabeceras:</strong></p>
+<blockquote>
+<p>Authorization: [token]</p>
+<p>Content-Type: application/json</p>
+<p>Accept: application/fhir+json</p>
+</blockquote>
+<p>Los ciudadanos devueltos en la consulta corresponderán únicamente a
+los estados de TSISNS 0, 1, 2 y 7, que se corresponden con los
+siguientes:</p>
+<ul>
+<li><p>0 &#x1F86A; NORMAL</p></li>
+<li><p>1 &#x1F86A; BAJA EN SERVICIO DE SALUD</p></li>
+<li><p>2 &#x1F86A; BAJA POR DEFUNCION</p></li>
+<li><p>7 &#x1F86A; BAJA. NECESITA ACREDITACION DERECHO EN EL INSS</p></li>
+</ul>
+<p><strong>Parámetros de la operación</strong></p>
+<table border="1">
+<colgroup>
+<col style="width: 29%"/>
+<col style="width: 70%"/>
+</colgroup>
+<tbody>
+<tr>
+<td><strong>_id</strong></td>
+<td style="text-align: left;">Código Sns del paciente que se quiere
+consultar.</td>
+</tr>
+<tr>
+<td><strong>identifier</strong></td>
+<td style="text-align: left;">Identificador del paciente, puede ser
+alguno de los establecidos: DNI, NIE, Pasaporte, CIP, etc.</td>
+</tr>
+<tr>
+<td><strong>_elements</strong></td>
+<td style="text-align: left;">Conjunto de datos relacionados con el
+paciente a recuperar. Este elemento de consulta se utilizará en la
+petición transfronteriza, donde se indica el conjunto mínimo de datos
+recuperar del mismo: identifier,active,name,birthDate,gender</td>
+</tr>
+</tbody>
+</table>
+<p><a name="l501">​</a>Para la comunicación de <strong>respuestas de éxito</strong> de la
+consulta de usuario se hará uso del <strong>recurso FHIR
+Patient</strong>, (<a href="#referencias">Referencia 1</a>) más
+concretamente un <strong>listado de Patient</strong> (usuarios
+encontrados) que será embebido por el <strong>recurso FHIR
+Bundle</strong> <a href="#referencias">(Referencia 2).</a></p>
+<table border="1">
+<colgroup>
+<col style="width: 26%"/>
+<col style="width: 28%"/>
+<col style="width: 44%"/>
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Origen</strong></th>
+<th style="text-align: center;"><strong>Recurso FHIR</strong></th>
+<th style="text-align: center;"><strong>Descripcion</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Usuarios_encontrados</strong></td>
+<td>"<strong>Bundle</strong>”</td>
+<td>En la actual respuesta sería el nodo Usuarios_encontrados.</td>
+</tr>
+<tr>
+<td>max_usuarios</td>
+<td>Bundle &#x1F86A; total</td>
+<td>Elementos obtenidos en la consulta</td>
+</tr>
+<tr>
+<td>inf_usuario</td>
+<td>Bundle &#x1F86A; entry</td>
+<td>Tendrá el recurso con la información del usuario, en este caso
+representado con Patient</td>
+</tr>
+</tbody>
+</table>
+<p>Como resultado del servicio se devolverán los siguientes datos:</p>
+<ul>
+<li><p>Cabeceras HTTP</p>
+<ul>
+<li><p>200 &#x1F86A; Operación realizada satisfactoriamente.</p></li>
+<li><p>401 &#x1F86A; No se ha recibido la cabecera Authorization, o bien, dicha
+cabecera no es correcta.</p></li>
+<li><p>511 &#x1F86A; Problemas con el sistema</p></li>
+<li><p>512 &#x1F86A; Agente no valido</p></li>
+<li><p>513 &#x1F86A; Cola saturada</p></li>
+<li><p>514 &#x1F86A; Sistema bloqueado</p></li>
+<li><p>515 &#x1F86A; Error firma no valida</p></li>
+<li><p>516 &#x1F86A; Operación no registrada</p></li>
+<li><p>517 &#x1F86A; Agente bloqueado</p></li>
+</ul></li>
+</ul>
+<p><a name="l643">​</a>Para la comunicación de <strong>respuestas de error</strong> se hará
+uso del <strong>recurso FHIR OperationOutcome</strong> <a href="#referencias">(Referencia 3)</a> ya que proporciona la estructura
+necesaria para cubrir las actuales respuestas de error.</p>
+<table border="1">
+<colgroup>
+<col style="width: 22%"/>
+<col style="width: 37%"/>
+<col style="width: 39%"/>
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Origen</strong></th>
+<th style="text-align: center;"><strong>Recurso FHIR</strong></th>
+<th style="text-align: center;"><strong>Descripcion</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Error</strong></td>
+<td><strong>OperationOutcome</strong></td>
+<td>Recurso para modelar toda la información asociada al error que se ha
+producido, o bien si la operación ha sido correcta, indicando tal
+hecho.</td>
+</tr>
+<tr>
+<td>Codigo_error</td>
+<td>OperationOutcome.issue.code</td>
+<td>Código de éxito/error.</td>
+</tr>
+<tr>
+<td>Descripcion_error</td>
+<td>OperationOutcome.issue.details</td>
+<td>Descripción del éxito/error.</td>
+</tr>
+<tr>
+<td>Nivel de error</td>
+<td>OperationOutcome.issue.severity</td>
+<td>Nivel de error</td>
+</tr>
+<tr>
+<td>Diagnóstico</td>
+<td>OperationOutcome.issue.diagnostics</td>
+<td>Diagnóstico</td>
+</tr>
+</tbody>
+</table>
+<p>Actualmente, los criterios para la localización de usuarios que
+soporta el sistema son los siguientes, y en este proyecto van a ser los
+criterios de búsqueda a utilizar.</p>
+<table border="1">
+<colgroup>
+<col style="width: 43%"/>
+<col style="width: 56%"/>
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Tipo de Criterio</strong></th>
+<th style="text-align: center;"><strong>Criterio</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Identificador</strong></td>
+<td><ul>
+<li><p>CodSns</p></li>
+<li><p>Naf</p></li>
+<li><p>Naf_titular</p></li>
+<li><p>Dni</p></li>
+<li><p>Pasaporte</p></li>
+<li><p>CIP</p></li>
+<li><p>Codidssalud junto al id_salud</p></li>
+</ul></td>
+</tr>
+<tr>
+<td><strong>Combinación de criterios</strong></td>
+<td><ul>
+<li><p>Apellido1 con Apellido2 y nombre</p></li>
+<li><p>Apellido1 con Apellido2 y fechaNacimiento</p></li>
+<li><p>Apellido1 con Apellido2 y dni</p></li>
+<li><p>Apellido1 con Apellido2 y pasaporte</p></li>
+<li><p>Apellido1 con Apellido2, nombre y fechaNacimiento</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<p>A futuro, esta transacción debería admitir relaciones tanto de AND
+como de OR, soportando métodos con múltiples parámetros.</p>
+<table border="1">
+<colgroup>
+<col style="width: 43%"/>
+<col style="width: 56%"/>
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Parámetro</strong></th>
+<th style="text-align: center;"><strong>Definición</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>_id</strong></td>
+<td><p>Parámetro de tipo cadena. Representa el identificador del recurso
+Patient que se está consultando. Una búsqueda utilizando _id siempre es
+una búsqueda de coincidencia exacta.</p>
+<p>GET [base]/Patient?_id=123456</p></td>
+</tr>
+<tr>
+<td><strong>Active</strong></td>
+<td><p>Parámetro de tipo token, se espera que el valor proporcionado sea
+un token que representa el estado de activación del paciente. En este
+caso, los valores esperados serían "true" o "false", que indicarían si
+el paciente está activo o no activo, respectivamente.</p>
+<p>GET [base]/Patient?active=true</p></td>
+</tr>
+<tr>
+<td><strong>family and given</strong></td>
+<td><p>Parámetros de tipo cadena. Especifica el nombre de la persona
+cuya información se está consultando. Se puede usar tanto el apellido,
+el nombre o una combinación de ambos para filtrar por apellido, nombre o
+ambos respectivamente.</p>
+<p>GET [base]/Patient?family=Sanchez&amp;given=Juan</p></td>
+</tr>
+<tr>
+<td><strong>identifier</strong></td>
+<td><p>Parámetro “repetido” de tipo token. Representa un identificador
+asociado al paciente cuya información está siendo consultada.</p>
+<p>Particularmente, se puede instanciar de manera múltiple el parámetro
+identifier dentro de una misma consulta. El paciente que se obtenga como
+resultado deberá, por tanto, cumplir con todas y cada una de las
+condiciones indicadas en el uso del parámetro identifier.</p>
+<p>En caso de no especificar ningún token, la coincidencia se realizaría
+en cualquiera de los identificadores definidos en el recurso
+Patient.</p>
+<p>GET
+[base]/Patient?identifier=http://example.org/dni|12345678N</p></td>
+</tr>
+<tr>
+<td><strong>Telecom</strong></td>
+<td><p>Parámetro de tipo token. Especifica detalles relativos a
+telecomunicaciones de la persona cuya información se está
+consultando.</p>
+<p>GET [base]/Patient?telecom=tel|123456789</p></td>
+</tr>
+<tr>
+<td><strong>Birthdate</strong></td>
+<td><p>Parámetro de tipo fecha. Especifica la fecha de nacimiento de la
+persona cuya información se está consultando.</p>
+<p>GET [base]/Patient?birthdate=1970-01-01</p></td>
+</tr>
+<tr>
+<td><strong>Address</strong></td>
+<td><p>Parámetro de tipo cadena. Representa una coincidencia con parte o
+la totalidad de la dirección asociada con la persona que se está
+consultando.</p>
+<p>GET [base]/Patient?address=Preciados</p></td>
+</tr>
+<tr>
+<td><p><strong>address-city,</strong></p>
+<p><strong>address-country,</strong></p>
+<p><strong>address-postalcode,</strong></p>
+<p><strong>address-state</strong></p></td>
+<td><p>Parámetros de tipo cadena. Representa una coincidencia con parte
+de la dirección especificada asociada con la persona que se está
+consultando.GET [base]/Patient?address-city=Madrid</p>
+<p>GET [base]/Patient?address-country=Francia</p>
+<p>GET [base]/Patient?address-postalcode=10001</p>
+<p>GET [base]/Patient?address-state=Francia</p></td>
+</tr>
+<tr>
+<td><strong>Gender</strong></td>
+<td><p>Parámetro de tipo token. Especifica el género administrativo de
+la persona cuya información se está consultando.</p>
+<p>GET [base]/Patient?gender=male</p></td>
+</tr>
+<tr>
+<td><strong>mothersMaidenName</strong></td>
+<td><p>Parámetro de tipo cadena. Especifica el apellido de soltera de la
+madre de la persona cuya información se está consultando.</p>
+<p>GET [base]/Patient?mothersMaidenName=Sanchez</p></td>
+</tr>
+</tbody>
+</table>
+<h4 id="gestión-de-operaciones"><strong>Gestión de
+Operaciones</strong></h4>
+<p>Las operaciones de consulta a contemplar son las siguientes:</p>
+<ul>
+<li><p>C001 - Consulta de información usuario, con sus variantes:</p>
+<ul>
+<li><p>PC001. Consulta información actual ciudadano</p></li>
+<li><p>PC002. Consulta información del histórico ciudadano</p></li>
+<li><p>PC003. Consulta prestaciones ciudadano</p></li>
+<li><p>PC004. Consulta información actual ciudadano y
+prestaciones.</p></li>
+</ul></li>
+<li><p>C012 - Consulta de datos a INSS</p></li>
+</ul>
+<table border="1">
+<colgroup>
+<col style="width: 16%"/>
+<col style="width: 41%"/>
+<col style="width: 41%"/>
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Acciones</strong></th>
+<th style="text-align: center;"><strong>Interfaz</strong></th>
+<th style="text-align: center;"><strong>Respuesta</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><p><strong>PC001 - Consulta información actual
+ciudadano</strong></p>
+<p>Esta acción implica la consulta de los datos actuales de un
+ciudadano, utilizando para ello los criterios de búsqueda antes
+indicados.</p></td>
+<td>GET [base]/fhir/Patient?param1=value1&amp; …</td>
+<td style="text-align: left;"><p>{</p>
+<p>"resourceType": "Bundle",</p>
+<p>"id": "d88b13f9fbc9bfcf99600be9bbd31786",</p>
+<p>"meta": {</p>
+<p>"lastUpdated": "2024-10-23T11:56:30.9365422+00:00"</p>
+<p>},</p>
+<p>"type": "searchset",</p>
+<p>"entry": [</p>
+<p>{</p>
+<p>"fullUrl": "[Base]/Patient/32d6a6fa-bee0-4be7-91bc-15f974ecfcd1",</p>
+<p>"resource": {</p>
+<p>"resourceType": "Patient",</p>
+<p>"id": "usuario123",</p>
+<p>"identifier": [</p>
+<p>{</p>
+<p>"system": "http://example.org/sns",</p>
+<p>"value": "123456789"</p>
+<p>}</p>
+<p>],</p>
+<p>"name": [</p>
+<p>{</p>
+<p>"family": "Luque",</p>
+<p>"given": [</p>
+<p>"Juan"</p>
+<p>]</p>
+<p>}</p>
+<p>],</p>
+<p>"gender": "hombre"</p>
+<p>]</p>
+<p>}</p></td>
+</tr>
+<tr>
+<td><p><strong>PC002 - Consulta información histórico
+ciudadano</strong></p>
+<p>Esta acción implica la consulta de los datos históricos de un
+ciudadano, utilizando para ello el identificador interno</p></td>
+<td>GET [base]/fhir/Patient/&lt;&lt;idInterno&gt;&gt;/_history</td>
+<td style="text-align: left;"><p>{</p>
+<p>"resourceType": "Bundle",</p>
+<p>"id": "d88b13f9fbc9bfcf99600be9bbd31786",</p>
+<p>"meta": {</p>
+<p>"lastUpdated": "2024-10-23T11:56:30.9365422+00:00"</p>
+<p>},</p>
+<p>"type": "searchset",</p>
+<p>"entry": [</p>
+<p>{</p>
+<p>"fullUrl": "[Base]/Patient/32d6a6fa-bee0-4be7-91bc-15f974ecfcd1",</p>
+<p>"resource": {</p>
+<p>"resourceType": "Patient",</p>
+<p>"id": "usuario123",</p>
+<p>"identifier": [</p>
+<p>{</p>
+<p>"system": "http://example.org/sns",</p>
+<p>"value": "123456789"</p>
+<p>}</p>
+<p>],</p>
+<p>"name": [</p>
+<p>{</p>
+<p>"family": "Luque",</p>
+<p>"given": [</p>
+<p>"Juan"</p>
+<p>]</p>
+<p>}</p>
+<p>],</p>
+<p>"gender": "hombre"</p>
+<p>]</p>
+<p>}</p></td>
+</tr>
+<tr>
+<td><p><strong>PC003/PC004 Consulta prestaciones ciudadano</strong></p>
+<p>Esta acción implica la consulta de los datos actuales de un
+ciudadano, donde se incluyen también los datos relacionados con
+coberturas. Dichos datos se modelan con las correspondientes
+extensiones, tal y como se ha explicado en apartados
+anteriores.</p></td>
+<td>GET [base]/fhir/Patient?param1=value1&amp;param2=value2&amp;…</td>
+<td style="text-align: left;"><p>{</p>
+<p>"resourceType": "Bundle",</p>
+<p>"id": "d88b13f9fbc9bfcf99600be9bbd31786",</p>
+<p>"meta": {</p>
+<p>"lastUpdated": "2024-10-23T11:56:30.9365422+00:00"</p>
+<p>},</p>
+<p>"type": "searchset",</p>
+<p>"entry": [</p>
+<p>{</p>
+<p>"fullUrl": "[Base]/Patient/32d6a6fa-bee0-4be7-91bc-15f974ecfcd1",</p>
+<p>"resource": {</p>
+<p>"resourceType": "Patient",</p>
+<p>"id": "usuario123",</p>
+<p>"identifier": [</p>
+<p>{</p>
+<p>"system": "http://example.org/sns",</p>
+<p>"value": "123456789"</p>
+<p>}</p>
+<p>],</p>
+<p>"name": [</p>
+<p>{</p>
+<p>"family": "Luque",</p>
+<p>"given": [</p>
+<p>"Juan"</p>
+<p>]</p>
+<p>}</p>
+<p>],</p>
+<p>"gender": "hombre"</p>
+<p>]</p>
+<p>}</p></td>
+</tr>
+<tr>
+<td><p><strong>C012 - Consulta de datos a INSS</strong></p>
+<p>Esta acción implica la consulta de los datos actuales de un ciudadano
+a la copia BADAS recibida del INSS utilizando para ello los criterios de
+búsqueda antes mencionados.</p>
+<p>Para esta operación se va a incluir también una cabecera que indique
+que el origen de los datos es INSS, para distinguirla de la consulta
+inicial.</p></td>
+<td><p>GET [base]/fhir/Patient?param1=value1&amp;param2=value2&amp;…</p>
+<p>Header: origen -- INSS</p></td>
+<td style="text-align: left;"><p>{</p>
+<p>"resourceType": "Bundle",</p>
+<p>"id": "d88b13f9fbc9bfcf99600be9bbd31786",</p>
+<p>"meta": {</p>
+<p>"lastUpdated": "2024-10-23T11:56:30.9365422+00:00"</p>
+<p>},</p>
+<p>"type": "searchset",</p>
+<p>"entry": [</p>
+<p>{</p>
+<p>"fullUrl": "[Base]/Patient/32d6a6fa-bee0-4be7-91bc-15f974ecfcd1",</p>
+<p>"resource": {</p>
+<p>"resourceType": "Patient",</p>
+<p>"id": "usuario123",</p>
+<p>"identifier": [</p>
+<p>{</p>
+<p>"system": "http://example.org/sns",</p>
+<p>"value": "123456789"</p>
+<p>}</p>
+<p>],</p>
+<p>"name": [</p>
+<p>{</p>
+<p>"family": "Luque",</p>
+<p>"given": [</p>
+<p>"Juan"</p>
+<p>]</p>
+<p>}</p>
+<p>],</p>
+<p>"gender": "hombre"</p>
+<p>]</p>
+<p>}</p></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://sns.gob.es">SNS</a>.  Package tsi.sns.implementationGuide#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 19, 2025 12:43+0100">2025-02-19</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+    <!-- Analytics Below
+  ================================================== -->
+  
+
+
+</img></td></tr></table></div></div></div></body></html>

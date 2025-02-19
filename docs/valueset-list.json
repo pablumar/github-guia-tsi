@@ -1,0 +1,152 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://sns.gob.es/fhir/tsi/ValueSet/aseguradorasVS",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "AseguradorasVS",
+      "title" : "ValueSet Aseguradoras",
+      "description" : "ValueSet Aseguradoras",
+      "systems" : ["http://sns.gob.es/fhir/tsi/CodeSystem/aseguradorasCS"]
+    },
+    {
+      "url" : "http://sns.gob.es/fhir/tsi/ValueSet/colaboradorasVS",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "ColaboradorasVS",
+      "title" : "ValueSet Colaboradoras",
+      "description" : "ValueSet Colaboradoras",
+      "systems" : ["http://sns.gob.es/fhir/tsi/CodeSystem/colaboradorasCS"]
+    },
+    {
+      "url" : "http://sns.gob.es/fhir/tsi/ValueSet/comunidadesAutonomasVS",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "ComunidadesAutonomasVS",
+      "title" : "ValueSet Comunidades Autónomas",
+      "description" : "ValueSet Comunidades Autónomas",
+      "systems" : [
+        "http://sns.gob.es/fhir/tsi/CodeSystem/comunidadesAutonomasCS"
+      ]
+    },
+    {
+      "url" : "http://sns.gob.es/fhir/tsi/ValueSet/estadoIndefVS",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "EstadoIndefVS",
+      "title" : "ValueSet comprobación Fecha Defunción",
+      "description" : "ValueSet comprobación Fecha Defunción",
+      "systems" : ["http://sns.gob.es/fhir/tsi/CodeSystem/estadoIndefCS"]
+    },
+    {
+      "url" : "http://sns.gob.es/fhir/tsi/ValueSet/estadosVS",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "EstadosVS",
+      "title" : "ValueSet Estado Paciente",
+      "description" : "ValueSet Estado Paciente",
+      "systems" : ["http://sns.gob.es/fhir/tsi/CodeSystem/estadosCS"]
+    },
+    {
+      "url" : "http://sns.gob.es/fhir/tsi/ValueSet/gestorasVS",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "GestorasVS",
+      "title" : "ValueSet Gestoras",
+      "description" : "ValueSet Gestoras",
+      "systems" : ["http://sns.gob.es/fhir/tsi/CodeSystem/gestorasCS"]
+    },
+    {
+      "url" : "http://sns.gob.es/fhir/tsi/ValueSet/indicadorFarmaciaVS",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "IndicadorFarmaciaVS",
+      "title" : "Indicador Farmacia ValueSet",
+      "description" : "Indicador Farmacia ValueSet",
+      "systems" : ["http://sns.gob.es/fhir/tsi/CodeSystem/indicadorFarmaciaCS"]
+    },
+    {
+      "url" : "http://sns.gob.es/fhir/tsi/ValueSet/municipiosVS",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "MunicipiosVS",
+      "title" : "ValueSet Municipios",
+      "description" : "ValueSet Municipios",
+      "systems" : ["http://sns.gob.es/fhir/tsi/CodeSystem/municipiosCS"]
+    },
+    {
+      "url" : "http://sns.gob.es/fhir/tsi/ValueSet/nacionalidadesVS",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "NacionalidadesVS",
+      "title" : "ValueSet Nacionalidades",
+      "description" : "ValueSet Nacionalidades",
+      "systems" : ["http://sns.gob.es/fhir/tsi/CodeSystem/nacionalidadesCS"]
+    },
+    {
+      "url" : "http://sns.gob.es/fhir/tsi/ValueSet/paisesVS",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "PaisesVS",
+      "title" : "ValueSet Paises",
+      "description" : "ValueSet Paises",
+      "systems" : ["http://sns.gob.es/fhir/tsi/CodeSystem/paisesCS"]
+    },
+    {
+      "url" : "http://sns.gob.es/fhir/tsi/ValueSet/proveedoresVS",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "ProveedoresVS",
+      "title" : "ValueSet Proveedores",
+      "description" : "ValueSet Proveedores",
+      "systems" : ["http://sns.gob.es/fhir/tsi/CodeSystem/proveedoresCS"]
+    },
+    {
+      "url" : "http://sns.gob.es/fhir/tsi/ValueSet/provinciasVS",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "ProvinciasVS",
+      "title" : "ValueSet Provincias",
+      "description" : "ValueSet Provincias",
+      "systems" : ["http://sns.gob.es/fhir/tsi/CodeSystem/provinciasCS"]
+    },
+    {
+      "url" : "http://sns.gob.es/fhir/tsi/ValueSet/situacionesVS",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "SituacionesVS",
+      "title" : "ValueSet Situaciones",
+      "description" : "ValueSet Situaciones",
+      "systems" : ["http://sns.gob.es/fhir/tsi/CodeSystem/situacionesCS"]
+    },
+    {
+      "url" : "http://sns.gob.es/fhir/tsi/ValueSet/subIndicadorFarmaciaVS",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "SubIndicadorFarmaciaVS",
+      "title" : "ValueSet Subindicador Farmacia",
+      "description" : "ValueSet Subindicador Farmacia",
+      "systems" : [
+        "http://sns.gob.es/fhir/tsi/CodeSystem/subIndicadorFarmaciaCS"
+      ]
+    },
+    {
+      "url" : "http://sns.gob.es/fhir/tsi/ValueSet/tipoViaVS",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "TipoViaVS",
+      "title" : "ValueSet Tipo de Via",
+      "description" : "ValueSet Tipo de Via",
+      "systems" : ["http://sns.gob.es/fhir/tsi/CodeSystem/tipoViaCS"]
+    },
+    {
+      "url" : "http://sns.gob.es/fhir/tsi/ValueSet/titulosVS",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "TitulosVS",
+      "title" : "ValueSet Titulos",
+      "description" : "ValueSet Titulos",
+      "systems" : ["http://sns.gob.es/fhir/tsi/CodeSystem/titulosCS"]
+    }
+  ]
+}

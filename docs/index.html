@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Introducción - Guía de Implementación Tarjeta Sanitaria Individual (TSI) v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"1"}
+    h3,h4,h5,h6{--heading-prefix:"1"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<div>
+  <table width="100%">
+    <tr >
+      <td align="center">
+        <img src="assets/images/logoGlobal.png">
+      </td>
+    </tr>
+  </table>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación Tarjeta Sanitaria Individual (TSI)</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - R4
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Introducción</a>
+  </li>
+  <li>
+    <a href="toc.html">Listado de Contenidos</a>
+  </li>
+  <li>
+    <a href="diagramaSec.html">Diagrama de Secuencia</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Escenarios
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="llamadaConsulta.html">Consulta de Ciudadanos</a>
+      </li>
+      <li>
+        <a href="llamadaAlta.html">Alta Ciudadanos</a>
+      </li>
+      <li>
+        <a href="llamadaModificacion.html">Modificacion Ciudadanos</a>
+      </li>
+      <li>
+        <a href="llamadaBaja.html">Baja Ciudadanos</a>
+      </li>
+      <li>
+        <a href="llamadaNotificar.html">Notificar Cambio</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementación
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="consultarCiudadano.html">Consulta de Ciudadanos</a>
+      </li>
+      <li>
+        <a href="consultarCiudadanoEuropeo.html">Consulta de Ciudadano Europeo</a>
+      </li>
+      <li>
+        <a href="altaCiudadano.html">Alta Ciudadanos</a>
+      </li>
+      <li>
+        <a href="modificarCiudadano.html">Modificacion Ciudadanos</a>
+      </li>
+      <li>
+        <a href="bajaCiudadano.html">Baja Ciudadanos</a>
+      </li>
+      <li>
+        <a href="notificarCambio.html">Notificar Cambio</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artefactos
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">Listado</a>
+      </li>
+      <li>
+        <a href="mapeo.html">Mapeos</a>
+      </li>
+      <li>
+        <a href="terminologias.html">Terminologias</a>
+      </li>
+      <li>
+        <a href="seguridad.html">Seguridad</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Introducción</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación Tarjeta Sanitaria Individual (TSI) - Local Development build (v1.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://example.com/fhir/example/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Introducción</h2>
+  
+
+
+
+
+
+
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://example.com/fhir/example<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://example.com/fhir/example"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">1.0.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://example.com/fhir/example|1.0.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2025-01-01
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">TarjetaSanitariaIndividualIG</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<p>Para la estrategia de evolución de la mensajería existente en TSI al
+ecosistema FHIR, partiremos inicialmente de especificaciones estándar
+internacionales que cubren los requisitos de interoperabilidad deseables
+para un sistema maestro de pacientes.</p>
+<p>Para esto, tomaremos como referencia los perfiles de
+interoperabilidad definidos a nivel de IHE (Integrating the Healthcare
+Enterprise).</p>
+<p>IHE define múltiples perfiles de integración entre sistemas del
+ámbito sanitario, parte de los cuales se definen según el estándar HL7
+FHIR. Cada perfil de integración define distintos roles que deben
+cumplir los sistemas participantes, así como la mensajería a implementar
+en función del rol adoptado por el sistema. En IHE, se utiliza el
+término “transacción” como definición de los distintos mensajes de
+integración.</p>
+<p>En un escenario de gestión de la información de pacientes donde
+existen múltiples dominios de identificación (caso de TSI con las
+distintas comunidades autónomas y mutualidades), los perfiles de
+interoperabilidad IHE relevantes y basados en FHIR son los
+siguientes:</p>
+<ul>
+<li><p><u>IHE PIXm
+(https://profiles.ihe.net/ITI/PIXm/index.html)</u></p></li>
+</ul>
+<blockquote>
+<p>Este perfil de integración cubre la gestión centralizada de los
+distintos identificadores (referencias) que un paciente pueda tener en
+distintos dominios, definiendo mensajes estándar para la consulta de
+identificadores, así como la notificación de cambios sobre datos del
+paciente.</p>
+<table><tr><td><img src="assets/images/imagen1.png" style="width:6.27778in;height:1.54931in" alt="Interfaz de usuario gráfica, Texto, Aplicación, Chat o mensaje de texto" /></td></tr></table>
+
+<p>Bajo este perfil de integración, TSI adoptaría el rol “Patient
+Identifier Cross-reference Manager”</p>
+</blockquote>
+<ul>
+<li><p><u>IHE PDQm
+(https://profiles.ihe.net/ITI/PDQm/index.html)</u></p></li>
+</ul>
+<blockquote>
+<p>Este perfil de integración cubre las consultas de información sobre
+pacientes en formato FHIR.</p>
+<table><tr><td><img src="assets/images/imagen2.png" style="width:5.90625in;height:2.55208in" alt="Interfaz de usuario gráfica, Texto" /></td></tr></table>
+<p>Bajo este perfil de integración, TSI adoptaría el rol “Patient
+Demographics Supplier”, y las CCAA adoptarían el rol “Patient
+Demographics Consumer”, como se muestra a continuación:</p>
+<table><tr><td><img src="assets/images/imagen3.png" style="width:5.90625in;height:2.60417in" alt="Imagen que contiene Diagrama" /></td></tr></table>
+</blockquote>
+<ul>
+<li><p><u>IHE PMIR
+(https://profiles.ihe.net/ITI/PMIR/index.html)</u></p></li>
+</ul>
+<blockquote>
+<p>PMIR (Patient Master Identity Registry) es otro perfil de integración
+basado en FHIR que aúna las capacidades de los perfiles PIXm y PDQm,
+permitiendo la consulta, creación, actualización y eliminación de
+información sobre los datos de un paciente. Adicionalmente, incorpora un
+patrón de integración para que otros sistemas externos puedan
+subscribirse a actualizaciones sobre los datos de pacientes y reciban
+notificaciones cuando se producen.</p>
+<table><tr><td><img src="assets/images/imagen4.png" style="width:6.27778in;height:1.46111in" alt="Diagrama" /></td></tr></table>
+<p>Bajo este perfil de integración, TSI adoptaría el rol de “Patient
+Identity Registry”.</p>
+<p>Bajo este perfil de integración también se encuentra la transacción
+IHE ITI-94 “Subscribe to Patient Updates”. Éste es un modelo de
+notificaciones basado en el patrón de publicación / subscripción de los
+sistemas interesados. La implementación de un modelo de este tipo no
+implicará de forma obligatoria adaptaciones en los sistemas que están
+consumiendo los mensajes definidos actualmente. Simplemente dejará
+preparado al sistema TSI para ser un proveedor de este mecanismo de
+notificación basado en la especificación FHIR.</p>
+</blockquote>
+<p>Adicionalmente, se tomarán como referencias las especificaciones FHIR
+disponibles a nivel de servicios europeos en lo que respecta a la
+búsqueda e identificación de pacientes.</p>
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://sns.gob.es">SNS</a>.  Package tsi.sns.implementationGuide#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 19, 2025 12:43+0100">2025-02-19</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

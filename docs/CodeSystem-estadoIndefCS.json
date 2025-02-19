@@ -1,0 +1,49 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "estadoIndefCS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem estadoIndefCS</b></p><a name=\"estadoIndefCS\"> </a><a name=\"hcestadoIndefCS\"> </a><a name=\"estadoIndefCS-en-US\"> </a><p>This  code system <code>http://sns.gob.es/fhir/tsi/CodeSystem/estadoIndefCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">0<a name=\"estadoIndefCS-0\"> </a></td><td>Sin validar</td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"estadoIndefCS-1\"> </a></td><td>Pendiente validación manual</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"estadoIndefCS-2\"> </a></td><td>Validado manual</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"estadoIndefCS-3\"> </a></td><td>Validado automático</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"estadoIndefCS-4\"> </a></td><td>No validable</td></tr></table></div>"
+  },
+  "url" : "http://sns.gob.es/fhir/tsi/CodeSystem/estadoIndefCS",
+  "version" : "1.0.0",
+  "name" : "EstadoIndefCS",
+  "title" : "Estado comprobación Fecha Defunción",
+  "status" : "draft",
+  "date" : "2025-02-19T12:43:17+01:00",
+  "publisher" : "SNS",
+  "contact" : [{
+    "name" : "SNS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://sns.gob.es"
+    },
+    {
+      "system" : "email",
+      "value" : "my-group@example.com"
+    }]
+  }],
+  "description" : "Estado comprobación Fecha Defunción",
+  "content" : "complete",
+  "count" : 5,
+  "concept" : [{
+    "code" : "0",
+    "display" : "Sin validar"
+  },
+  {
+    "code" : "1",
+    "display" : "Pendiente validación manual"
+  },
+  {
+    "code" : "2",
+    "display" : "Validado manual"
+  },
+  {
+    "code" : "3",
+    "display" : "Validado automático"
+  },
+  {
+    "code" : "4",
+    "display" : "No validable"
+  }]
+}

@@ -1,0 +1,53 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/example/CodeSystem/estadoIndefCS> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "estadoIndefCS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem estadoIndefCS</b></p><a name=\"estadoIndefCS\"> </a><a name=\"hcestadoIndefCS\"> </a><a name=\"estadoIndefCS-en-US\"> </a><p>This  code system <code>http://sns.gob.es/fhir/tsi/CodeSystem/estadoIndefCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">0<a name=\"estadoIndefCS-0\"> </a></td><td>Sin validar</td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"estadoIndefCS-1\"> </a></td><td>Pendiente validación manual</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"estadoIndefCS-2\"> </a></td><td>Validado manual</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"estadoIndefCS-3\"> </a></td><td>Validado automático</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"estadoIndefCS-4\"> </a></td><td>No validable</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://sns.gob.es/fhir/tsi/CodeSystem/estadoIndefCS"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "EstadoIndefCS"] ; # 
+  fhir:title [ fhir:v "Estado comprobación Fecha Defunción"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-02-19T12:43:17+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "SNS"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SNS" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://sns.gob.es" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "my-group@example.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Estado comprobación Fecha Defunción"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "0" ] ;
+     fhir:display [ fhir:v "Sin validar" ]
+  ] [
+     fhir:code [ fhir:v "1" ] ;
+     fhir:display [ fhir:v "Pendiente validación manual" ]
+  ] [
+     fhir:code [ fhir:v "2" ] ;
+     fhir:display [ fhir:v "Validado manual" ]
+  ] [
+     fhir:code [ fhir:v "3" ] ;
+     fhir:display [ fhir:v "Validado automático" ]
+  ] [
+     fhir:code [ fhir:v "4" ] ;
+     fhir:display [ fhir:v "No validable" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

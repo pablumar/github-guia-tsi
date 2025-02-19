@@ -1,0 +1,33 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "nacionalidadesCS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem nacionalidadesCS</b></p><a name=\"nacionalidadesCS\"> </a><a name=\"hcnacionalidadesCS\"> </a><a name=\"nacionalidadesCS-en-US\"> </a><p>This  code system <code>http://sns.gob.es/fhir/tsi/CodeSystem/nacionalidadesCS</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">724<a name=\"nacionalidadesCS-724\"> </a></td><td>ESPAÑA</td></tr></table></div>"
+  },
+  "url" : "http://sns.gob.es/fhir/tsi/CodeSystem/nacionalidadesCS",
+  "version" : "1.0.0",
+  "name" : "NacionalidadesCS",
+  "title" : "CodeSystem Nacionalidades",
+  "status" : "draft",
+  "date" : "2025-02-19T12:43:17+01:00",
+  "publisher" : "SNS",
+  "contact" : [{
+    "name" : "SNS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://sns.gob.es"
+    },
+    {
+      "system" : "email",
+      "value" : "my-group@example.com"
+    }]
+  }],
+  "description" : "CodeSystem Nacionalidades",
+  "content" : "complete",
+  "count" : 1,
+  "concept" : [{
+    "code" : "724",
+    "display" : "ESPAÑA"
+  }]
+}
